@@ -1,0 +1,61 @@
+*{margin:0px;padding:0px;}
+a:visited,a:link{text-decoration:none;color:#0095FF;}
+body{background-image:url("slike/savana.jpg");background-size:1450px 920px;
+	background-repeat:no-repeat;background-color:#000;}
+#omot{width:1000px;margin:0 auto;}
+	#header{width:330px;height:28px;float:right;background-color:#;}
+		#logo{width:29px;float:left;}
+		#login{width:300px;}
+		#login ul{list-style-type:none;margin:0px;padding:0px;}
+		#login li{float:left;}
+		#login a{display:block;width:30px;margin:4px 30px 1px 30px;text-decoration:none;}
+	#razmak1{width:1000px;clear:both;}
+	#meni{width:1000px;height:100px;}
+		#gornji{width:1000px;height:70px;}
+			#gornji h1{display:block;width:200px;margin:20px 1px 1px 70px;float:left;font-size:35px;}
+			#text{margin:30px 1px 5px 400px;width:200px;}
+			#submit{margin:30px 1px 5px 5px;width:60px;}
+		#donji{width:870px;height:30px;background-color:#FFF;margin-left:70px;}
+			#donji ul{list-style-type:none; margin:0px;padding:0px;}
+			#donji li{float:left;}
+			#donji a{display:block;margin:5px 1px 1px 100px;width:100px;text-decoration:none;}
+	#razmak2{width:1000px;}
+	#sadrzaj{width:870px;height:740px;margin-left:70px;}
+			#reg{width:500px;height:400px;position:absolute;text-align:center;
+				margin:50px 100px 50px 180px;color:#0095FF;background-color:#FCF4DC;opacity:0.85;}
+			#sadrzajzivotinje{width:870px;height:740px;margin-left:70px;
+				background-color:#FCF4DC;border:2px solid #000;padding:1px 1px 1px 1px;}
+				#sadrzajzivotinje p{padding:3px 10px 1px 5px;text-align:justify;}
+				#sadrzajzivotinje img{float:left;margin:5px 10px 1px 5px;}
+			#sadrzajautor{width:870px;height:740px;margin-left:70px;
+				background-color:#FCF4DC;border:2px solid #000;}
+				#sadrzajautor p{padding:30px 30px 1px 30px;text-align:center;}
+				#sadrzajautor h4{text-align:right;padding-top:10px;padding-right:70px;}
+				#sadrzajautor img{margin:50px 20px 20px 10px;}
+			#sadrzajraz{width:870px;height:740px;margin-left:70px;
+				background-color:#FCF4DC;border:2px solid #000;padding:1px 1px 1px 1px;}
+				#sadrzajraz h2{text-indent:120px;}
+				.justify{padding:15px 20px 1px 5px;text-indent:20px;text-align:justify;font-size:large;}
+				.center{text-align:center;font-size:large;padding:1px 20px 1px 5px;}
+				#pitaj{margin-top:90px;}
+				#sadrzajraz img{float:right;margin-right:20px;margin-left:20px;margin-top:5px;}
+	#razmak3{width:1000px;height:50px;}
+	#footer{height:150px;}
+		#social{height:150px;width:120px;float:left;}
+			#donjilogo{margin:20px 1px 1px 15px;}
+			#iconface{margin:5px 1px 1px 30px;}
+		#footerdesni{height:150px;width:800px;float:left;}
+			#lista1{float:left;height:140px;width:150px;}
+				#lista1 p{margin:20px 1px 1px 10px;color:#FFF;}
+				#lista1 hr{margin: 1px 1px 1px 10px;}
+				#lista1 ul{list-style-type:none;margin:1px 1px 1px 10px;}
+				#lista1 li{margin-top:5px;}
+				#lista1 a{text-decoration:none;}
+			#lista2{float:left;height:140px;width:150px;}
+				#lista2 p{margin:20px 1px 1px 10px;color:#FFF;}
+				#lista2 hr{margin: 1px 1px 1px 10px;}
+				#lista2 ul{list-style-type:none;margin:1px 1px 1px 10px;}
+				#lista2 li{margin-top:5px;}
+				#lista2 a{text-decoration:none;}
+		#prava{width:1000px;height:50px;float:left;}
+		#prava p{text-align:center;margin-top:10px;color:#FFF;}
