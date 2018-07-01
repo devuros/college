@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>EC135</title>
+		<meta charset="UTF-8">
+		<meta name="description" content="helicopter science is a place for helicopter entusiasts and rookies, we analyze manufacturers,
+		their models and we give lessons to explain how these amazing machines work">
+		<meta name="keywords" content="civil helicopters, military helicopters, rotor, safety, turbomeca, collective, cyclic, variant, blades">
+		<meta name="author" content="Uroš Jovanović">
+		
+		<script type="text/javascript" src="jquery-1.9.0.js"></script>
+		<script type="text/javascript" src="header.js"></script>
+		<script type="text/javascript" src="template.js"></script>
+		
+		<link rel="shortcut icon" href="Images/Icon1.jpg">
+		<link rel="stylesheet" type="text/css" href="template.css">
+	</head>
+	<body>
+		<!-- Header -->
+		<div id="header-wrapper">
+			<div id="header">
+				<div id="header-logo">
+					<a href="index.html">
+						<img src="Images/original.png" id="logo" alt="heli science logo" />
+						<img src="Images/pcfinal.png" id="tlogo" alt="heli science tlogo" />
+					</a>
+				</div>
+				<div id="header-hd-wrapper">
+					<div id="hd-search">
+						<div id="search-form-wrapper">
+							<form action="search.html" method="GET" id="search-form" style="display: none;">
+								<input type="text" id="TBsearch" name="word" placeholder="Search for models, companies..." />
+								<input type="submit" id="BTNsubmit-search" value="SEARCH" />
+							</form>
+						</div>
+						<div id="search-spyglass">
+							<img src="Images/transparent.png" id="spyglass-img" alt="spyglass" onclick="appear();" class="cursor" />
+						</div>
+					</div>
+					<div id="hd-links">
+						<ul>
+							<li> 
+								<a href="#" id="a-login" class="xs-color xs-spacing" onclick="return false">Log in</a>
+							</li>
+							<li>
+								<a href="signup.html" class="xs-color xs-spacing">Sign up</a>
+							</li>
+							<li>
+								<a href="#" id="a-content" class="xs-nospacing" onclick="return false" >
+									<img src="Images/menu.png" id="triangle-img" alt="triangle" />
+								</a>
+							</li>
+						</ul>
+						<!-- Content dropdown -->
+						<div id="hd-content">
+							<img src="Images/rotmenu.png" alt="point" />
+							<div id="content">
+								<ul>
+									<li> <a href="documentation.pdf" target="_blank">Documentation</a> </li>
+									<li> <a href="glossary_index.pdf" target="_blank">Glossary</a> </li>
+									<li> <a href="sitemap.xml" target="_blank">Sitemap</a> </li>
+								</ul>
+							</div>
+						</div>
+						<!-- Log in dropdown -->
+						<div id="hd-login">
+							<img src="Images/rotmenu.png" alt="point" />
+							<div id="login">
+								<form id="form-login" action="" method="">
+									<table>
+										<tr>
+											<td> <strong>Email</strong> </td>
+										</tr>
+										<tr>
+											<td> <input type="text" id="TBloginemail" class="input" /> </td>
+										</tr>
+										<tr>
+											<td> <strong>Password</strong> </td>
+										</tr>
+										<tr>
+											<td> <input type="text" id="TBloginpass" class="input" /> </td>
+										</tr>
+										<tr>
+											<td> <input type="button" id="BTNsubmit-login" value="Log in" /> </td>
+										</tr>
+									</table>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Main -->
+		<div id="main-wrapper">
+			<div id="slider">
+				<img src="Images/ec135.jpg" alt="ec 135" />
+			</div>
+			<div id="introduction">
+				<div id="introduction-left">
+					<h1>Introduction</h1>
+				</div>
+				<div id="introduction-right">
+					<p>
+						Roomy, silent and smooth the EC 130 Ecureuil is a single engine helicopter, is one of Eurocopter's
+						best-selling rotorcraft, nothing that 238 orders had been placed in 2011, a 40 per cent increase
+						over the previous year.
+					</p>
+				</div>
+			</div>
+			<div id="main-content-wrapper">
+				<div class="section" id="aircraft">
+					<div class="section-left">
+						<h2>Aircraft</h2>
+					</div>
+					<div class="section-right">
+						<h3 class="h-panel" id="h-panel1">Design</h3>
+						<div class="panel" id="panel1">
+							<p>
+								EC has two variants: EC130 B4 the initial launch model of the type, and EC 130 T2
+								upgraded variant of the B4; features redisgned airframe, more powerful engines
+								(Turbomecca Ariel 2D) and increased performance.
+								<br/><br/>
+								This model has bene popular
+								with Air medical services (AMS) operators due to its large cabin being capable of
+								accommodating up to two stretchers and two attendees, as well as a baggage area
+								for storing equipment, wide side doors for access.
+							</p>
+						</div>
+						<h3 class="h-panel" id="h-panel2">Operational history</h3>
+						<div class="panel" id="panel2">
+							<p>
+								In 2007, it was reported that the strongest demands for the EC130 and other such single-engine
+								helicopters has come from Latin and North American markets.
+								By May 2008, the EC130 had overtakes the Bell 206 as the best-selling rotorcraft on the market.
+								By 2015, Airbus reported that the EC130 was in service with 279 operators and had accumulated
+								moare than 1,1700,000 total flight hours worldwide!
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="section" id="details">
+					<div class="section-left">
+						<h2>Technical data</h2>
+					</div>
+					<div class="section-right">
+						<h3 class="h-panel" id="h-panel4">General</h3>
+						<div class="panel" id="panel4">
+							<p>
+								The H130 is certified with a pilot being on the left side. Anti-Vibration Control System
+								with 1 controller, actuators and accelerometers. Fuselage comprising the cabin
+								and 3 luagge holds, with floor tie-down nets and access doors.
+								Single color exterior painting. Internal paint: ligh grey (prevailing color).
+							</p>
+						</div>
+						<h3 class="h-panel" id="h-panel5">Power plant</h3>
+						<div class="panel" id="panel5">
+							<p>
+								One Turbomecca ARRIEL 2D turbine engines.
+								<br/>
+								One magnetic plug and 1 chip detector.
+								<br/>
+								One fire detection system.
+								<br/>
+								One air-intake protection grid.
+								<br/>
+								One torque-measurement pick-up.
+							</p>
+						</div>
+						<h3 class="h-panel" id="h-panel6">Transmission system</h3>
+						<div class="panel" id="panel6">
+							<p>
+								One main gearbox, anti-vibration mounted, with oil sight gauge,
+								chip detector, oil temperature and pressure switches, port for endoscope
+								and self sealing valve for oil sampling and draining.
+								<br/>
+								One main gearbox cooling system.
+								<br/>
+								One engine to main gearbox coupling shaft
+								<br/>
+								One rotor brake
+								<br/>
+								One main rotor high and low r.p.m warning device.
+								<br/>
+								One tail gearbox with oil sight gauge, chip detector and port
+								endoscopic inspection
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="strip">
+				<p>Click here to <a href="contact.html">contact us</a> for more information about this model</p>
+			</div>
+		</div>
+		<!-- Footer -->
+		<div id="footer-wrapper">
+			<div id="footer-top">
+				<ul>
+					<li class="main-column">
+						<ul class="sub-ul">
+							<li class="first-row">
+								<strong><b>Helicopters</b> (Civil)</strong>
+							</li>
+							<li>
+								<a href="ec120.html">EC120</a>
+							</li>
+							<li>
+								<a href="ec135.html">EC135</a>
+							</li>
+							<li>
+								<a href="as365.html">AS365</a>
+							</li>
+							<li>
+								<a href="b206.html">Bell206</a>
+							</li>
+						</ul>
+					</li>
+					<li class="main-column">
+						<ul class="sub-ul">
+							<li class="first-row">
+								<strong><b>Helicopters</b> (Military)</strong>
+							</li>
+							<li>
+								<a href="uh60.html">UH60</a>
+							</li>
+							<li>
+								<a href="ch53e.html">CH53e</a>
+							</li>
+							<li>
+								<a href="as565.html">AS565</a>
+							</li>
+							<li>
+								<a href="ah64.html">AH64</a>
+							</li>
+						</ul>
+					</li>
+					<li class="main-column">
+						<ul class="sub-ul">
+							<li class="first-row">
+								<strong>Manufacturers</strong>
+							</li>
+							<li>
+								<a href="bell.html">Bell</a>
+							</li>
+							<li>
+								<a href="airbus.html">Airbus</a>
+							</li>
+							<li>
+								<a href="sikorsky.html">Sikorsky</a>
+							</li>
+						</ul>
+					</li>
+					<li class="main-column">
+						<ul class="sub-ul">
+							<li class="first-row">
+								<strong>Lessons</strong>
+							</li>
+							<li>
+								<a href="auto.html">Autorotation</a>
+							</li>
+							<li>
+								<a href="rotorc.html">Rotor configuration</a>
+							</li>
+							<li>
+								<a href="antitorque.html">Anti-torque systems</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<div id="footer-bottom">
+				<ul class="main-ul">
+					<li class="column" >
+						<ul class="column-ul"> 
+							<li class="column-row followus-row">
+								<strong id="strongf1">Follow us on</strong>
+							</li>
+						</ul>
+					</li>
+					<li class="column">
+						<ul class="column-ul"> 
+							<li class="column-row">
+								<ul class="column-row-ul">
+									<li class="row-icon"> 
+										<img src="Images/transparent.png" id="facebook-icon" alt="facebook icon" />
+									</li>
+									<li class="row-text">
+										<a href="http://www.facebook.com" target="_blank">Facebook</a>
+									</li>
+								</ul>
+							</li>
+							<li class="column-row">
+								<ul class="column-row-ul">
+									<li class="row-icon">  
+										<img src="Images/transparent.png" id="twitter-icon" alt="twitter icon" />
+									</li>
+									<li class="row-text" > 
+										<a href="http://www.twitter.com" target="_blank">Twitter</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li class="column">
+						<ul class="column-ul"> 
+							<li class="column-row">
+								<ul class="column-row-ul">
+									<li class="row-icon"> 
+										<img src="Images/transparent.png" id="youtube-icon" alt="youtube icon" />
+									</li>
+									<li class="row-text">
+										<a href="http://www.youtube.com" target="_blank">Youtube</a>
+									</li>
+								</ul>
+							</li>
+							<li class="column-row">
+								<ul class="column-row-ul">
+									<li class="row-icon">  
+										<img src="Images/transparent.png" id="linkedin-icon" alt="linkedin icon" />
+									</li>
+									<li class="row-text"> 
+										<a href="http://www.linkedin.com" target="_blank">Linkedin</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li class="column">
+						<ul class="column-ul"> 
+							<li class="column-row">
+								<ul class="column-row-ul">
+									<li class="row-icon">  
+										<img src="Images/transparent.png" id="googleplus-icon" alt="google plus icon" />
+									</li>
+									<li class="row-text"> 
+										<a href="https://plus.google.com" target="_blank">Google+</a>
+									</li>
+								</ul>
+							</li>
+							<li class="column-row">
+								<ul class="column-row-ul">
+									<li class="row-icon">  
+										<img src="Images/transparent.png" id="rss-icon" alt="rss icon" />
+									</li>
+									<li class="row-text"> 
+										<a href="rss.xml">RSS</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li class="column">
+						<ul class="website-column"> 
+							<li class="website-row">
+								<strong id="strongf2">Content</strong>
+							</li>
+							<li class="website-row">
+								<a href="documentation.pdf" target="_blank">Documentation</a>
+							</li>
+							<li class="website-row">
+								<a href="glossary_index.pdf" target="_blank">Glossary</a>
+							</li>
+							<li class="website-row">
+								<a href="sitemap.xml">Sitemap</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<p> 
+					&copy Helicopter science 2016 by <a href="author.html">UBJ</a>
+				</p>
+			</div>
+		</div>
+	</body>
+</html>

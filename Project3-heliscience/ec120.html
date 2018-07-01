@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>EC120</title>
+		<meta charset="UTF-8">
+		<meta name="description" content="helicopter science is a place for helicopter entusiasts and rookies, we analyze manufacturers,
+		their models and we give lessons to explain how these amazing machines work">
+		<meta name="keywords" content="civil helicopters, military helicopters, rotor, safety, turbomeca, collective, cyclic, variant, blades">
+		<meta name="author" content="Uroš Jovanović">
+		
+		<script type="text/javascript" src="jquery-1.9.0.js"></script>
+		<script type="text/javascript" src="header.js"></script>
+		<script type="text/javascript" src="template.js"></script>
+		
+		<link rel="shortcut icon" href="Images/Icon1.jpg">
+		<link rel="stylesheet" type="text/css" href="template.css">
+	</head>
+	<body>
+		<!-- Header -->
+		<div id="header-wrapper">
+			<div id="header">
+				<div id="header-logo">
+					<a href="index.html">
+						<img src="Images/original.png" id="logo" alt="heli science logo" />
+						<img src="Images/pcfinal.png" id="tlogo" alt="heli science tlogo" />
+					</a>
+				</div>
+				<div id="header-hd-wrapper">
+					<div id="hd-search">
+						<div id="search-form-wrapper">
+							<form action="search.html" method="GET" id="search-form" style="display: none;">
+								<input type="text" id="TBsearch" name="word" placeholder="Search for models, companies..." />
+								<input type="submit" id="BTNsubmit-search" value="SEARCH" />
+							</form>
+						</div>
+						<div id="search-spyglass">
+							<img src="Images/transparent.png" id="spyglass-img" alt="spyglass" onclick="appear();" class="cursor" />
+						</div>
+					</div>
+					<div id="hd-links">
+						<ul>
+							<li> 
+								<a href="#" id="a-login" class="xs-color xs-spacing" onclick="return false">Log in</a>
+							</li>
+							<li>
+								<a href="signup.html" class="xs-color xs-spacing">Sign up</a>
+							</li>
+							<li>
+								<a href="#" id="a-content" class="xs-nospacing" onclick="return false" >
+									<img src="Images/menu.png" id="triangle-img" alt="triangle" />
+								</a>
+							</li>
+						</ul>
+						<!-- Content dropdown -->
+						<div id="hd-content">
+							<img src="Images/rotmenu.png" alt="point" />
+							<div id="content">
+								<ul>
+									<li> <a href="documentation.pdf" target="_blank">Documentation</a> </li>
+									<li> <a href="glossary_index.pdf" target="_blank">Glossary</a> </li>
+									<li> <a href="sitemap.xml" target="_blank">Sitemap</a> </li>
+								</ul>
+							</div>
+						</div>
+						<!-- Log in dropdown -->
+						<div id="hd-login">
+							<img src="Images/rotmenu.png" alt="point" />
+							<div id="login">
+								<form id="form-login" action="" method="">
+									<table>
+										<tr>
+											<td> <strong>Email</strong> </td>
+										</tr>
+										<tr>
+											<td> <input type="text" id="TBloginemail" class="input" /> </td>
+										</tr>
+										<tr>
+											<td> <strong>Password</strong> </td>
+										</tr>
+										<tr>
+											<td> <input type="text" id="TBloginpass" class="input" /> </td>
+										</tr>
+										<tr>
+											<td> <input type="button" id="BTNsubmit-login" value="Log in" /> </td>
+										</tr>
+									</table>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Main -->
+		<div id="main-wrapper">
+			<div id="slider">
+				<img src="Images/ec120web.png" alt="ec 120" />
+			</div>
+			<div id="introduction">
+				<div id="introduction-left">
+					<h1>Introduction</h1>
+				</div>
+				<div id="introduction-right">
+					<p>
+						The EC120 also known as Colibri has its origins in the P120, first launched in 1997.
+						Order's grew fast and production rose to 6 per month by Eurocopter. 
+						It features a wide, ergonomic cabin wtih high levels of external visibility
+						which can accomodate pilot with four passengers.
+					</p>
+				</div>
+			</div>
+			<div id="main-content-wrapper">
+				<div class="section" id="aircraft">
+					<div class="section-left">
+						<h2>Aircraft</h2>
+					</div>
+					<div class="section-right">
+						<h3 class="h-panel" id="h-panel1">Design</h3>
+						<div class="panel" id="panel1">
+							<p>
+								The EC120 Colibri is a single-engine multimission helicopter, designed for safe, simple
+								and cost-effective operations. It incorporates several Eurocopter's features including 8-bladed
+								fenestron&reg; anti-torque tail rotor. The design of the cabin is suitable for variety of civilian
+								and parapublic missions such as utility transport, offshore transport, law enforcement.
+								<br/>
+								According to the manufacturer it integrates a high level of advanced technology to make the
+								rotorcraft easier and safer to fly, as well as reduce costs.
+							</p>
+						</div>
+						<h3 class="h-panel" id="h-panel2">Development</h3>
+						<div class="panel" id="panel2">
+							<p>
+								On 20 October 1992, a contract for the join development contract of the new helicopter was signed
+								by three partners of the project, Eurocopter, China National Aero-Technology Import & Export Coropration
+								(CATIC) and Singapore Aerospace Ltd (STAero). Under the join development agreement, Eurocopter received
+								a 61% controlling interest and technical leadre in the programme.
+							</p>
+						</div>
+						<h3 class="h-panel" id="h-panel3">Safety</h3>
+						<div class="panel" id="panel3">
+							<p>
+								This is the only single-engine helicopter to memet the requiremenets of the new FAR/JAR 27 safety
+								regulations, which include incorporation of crashworthy fuel systems and energy-attenuating fuel structures and seats.
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="section" id="details">
+					<div class="section-left">
+						<h2>Technical data</h2>
+					</div>
+					<div class="section-right">
+						<h3 class="h-panel" id="h-panel4">General</h3>
+						<div class="panel" id="panel4">
+							<p>
+								EC120 is certified with a pilot being on the right or left side,Fuselage comprising the cabin
+								and the luggage hold with several accesses possibilities (one right rear lateral hinged cargo
+								and one rear access cargo door) and floor tie-down net.
+								<br/>
+								Tubal skid landing gear, with replaceable skid shoes with long footsteps profiler on rear tube,
+								capable of taking handling wheels. Interior signs and marking available in either French or English.
+							</p>
+						</div>
+						<h3 class="h-panel" id="h-panel5">Power plant</h3>
+						<div class="panel" id="panel5">
+							<p>
+								One Turbomeca ARRIUS 2F turbine engine complete with starting, fuel supply and governing systems.
+								<br/>
+								One crashworthy fuel system including 2 tanks with a total usable fuel capacity of 406 liters.
+								<br/>
+								One twist throttle with starter button incorporated in collective lever.
+								<br/>
+								Two chip detectors
+								<br/>
+								One engine lubrication and oil cooling system.
+								<br/>
+								One torque-measurement pick-up.
+							</p>
+						</div>
+						<h3 class="h-panel" id="h-panel6">Rotor and flight controls</h3>
+						<div class="panel" id="panel6">
+							<p>
+								One main rotor with 3 composite-material around a SPHERIFLEX&reg titanium rotor head.
+								One anti-torque rotor (FENESTRON) with 8 asymmetrical blades, integrated with vertical fin and
+								three main rotor hydraulic servo units.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="strip">
+				<p>Click here to <a href="contact.html">contact us</a> for more information about this model</p>
+			</div>
+		</div>
+		<!-- Footer -->
+		<div id="footer-wrapper">
+			<div id="footer-top">
+				<ul>
+					<li class="main-column">
+						<ul class="sub-ul">
+							<li class="first-row">
+								<strong><b>Helicopters</b> (Civil)</strong>
+							</li>
+							<li>
+								<a href="ec120.html">EC120</a>
+							</li>
+							<li>
+								<a href="ec135.html">EC135</a>
+							</li>
+							<li>
+								<a href="as365.html">AS365</a>
+							</li>
+							<li>
+								<a href="b206.html">Bell206</a>
+							</li>
+						</ul>
+					</li>
+					<li class="main-column">
+						<ul class="sub-ul">
+							<li class="first-row">
+								<strong><b>Helicopters</b> (Military)</strong>
+							</li>
+							<li>
+								<a href="uh60.html">UH60</a>
+							</li>
+							<li>
+								<a href="ch53e.html">CH53e</a>
+							</li>
+							<li>
+								<a href="as565.html">AS565</a>
+							</li>
+							<li>
+								<a href="ah64.html">AH64</a>
+							</li>
+						</ul>
+					</li>
+					<li class="main-column">
+						<ul class="sub-ul">
+							<li class="first-row">
+								<strong>Manufacturers</strong>
+							</li>
+							<li>
+								<a href="bell.html">Bell</a>
+							</li>
+							<li>
+								<a href="airbus.html">Airbus</a>
+							</li>
+							<li>
+								<a href="sikorsky.html">Sikorsky</a>
+							</li>
+						</ul>
+					</li>
+					<li class="main-column">
+						<ul class="sub-ul">
+							<li class="first-row">
+								<strong>Lessons</strong>
+							</li>
+							<li>
+								<a href="auto.html">Autorotation</a>
+							</li>
+							<li>
+								<a href="rotorc.html">Rotor configuration</a>
+							</li>
+							<li>
+								<a href="antitorque.html">Anti-torque systems</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<div id="footer-bottom">
+				<ul class="main-ul">
+					<li class="column" >
+						<ul class="column-ul"> 
+							<li class="column-row followus-row">
+								<strong id="strongf1">Follow us on</strong>
+							</li>
+						</ul>
+					</li>
+					<li class="column">
+						<ul class="column-ul"> 
+							<li class="column-row">
+								<ul class="column-row-ul">
+									<li class="row-icon"> 
+										<img src="Images/transparent.png" id="facebook-icon" alt="facebook icon" />
+									</li>
+									<li class="row-text">
+										<a href="http://www.facebook.com" target="_blank">Facebook</a>
+									</li>
+								</ul>
+							</li>
+							<li class="column-row">
+								<ul class="column-row-ul">
+									<li class="row-icon">  
+										<img src="Images/transparent.png" id="twitter-icon" alt="twitter icon" />
+									</li>
+									<li class="row-text" > 
+										<a href="http://www.twitter.com" target="_blank">Twitter</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li class="column">
+						<ul class="column-ul"> 
+							<li class="column-row">
+								<ul class="column-row-ul">
+									<li class="row-icon"> 
+										<img src="Images/transparent.png" id="youtube-icon" alt="youtube icon" />
+									</li>
+									<li class="row-text">
+										<a href="http://www.youtube.com" target="_blank">Youtube</a>
+									</li>
+								</ul>
+							</li>
+							<li class="column-row">
+								<ul class="column-row-ul">
+									<li class="row-icon">  
+										<img src="Images/transparent.png" id="linkedin-icon" alt="linkedin icon" />
+									</li>
+									<li class="row-text"> 
+										<a href="http://www.linkedin.com" target="_blank">Linkedin</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li class="column">
+						<ul class="column-ul"> 
+							<li class="column-row">
+								<ul class="column-row-ul">
+									<li class="row-icon">  
+										<img src="Images/transparent.png" id="googleplus-icon" alt="google plus icon" />
+									</li>
+									<li class="row-text"> 
+										<a href="https://plus.google.com" target="_blank">Google+</a>
+									</li>
+								</ul>
+							</li>
+							<li class="column-row">
+								<ul class="column-row-ul">
+									<li class="row-icon">  
+										<img src="Images/transparent.png" id="rss-icon" alt="rss icon" />
+									</li>
+									<li class="row-text"> 
+										<a href="rss.xml">RSS</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li class="column">
+						<ul class="website-column"> 
+							<li class="website-row">
+								<strong id="strongf2">Content</strong>
+							</li>
+							<li class="website-row">
+								<a href="documentation.pdf" target="_blank">Documentation</a>
+							</li>
+							<li class="website-row">
+								<a href="glossary_index.pdf" target="_blank">Glossary</a>
+							</li>
+							<li class="website-row">
+								<a href="sitemap.xml">Sitemap</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<p> 
+					&copy Helicopter science 2016 by <a href="author.html">UBJ</a>
+				</p>
+			</div>
+		</div>
+	</body>
+</html>

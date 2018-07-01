@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>CH53e</title>
+		<meta charset="UTF-8">
+		<meta name="description" content="helicopter science is a place for helicopter entusiasts and rookies, we analyze manufacturers,
+		their models and we give lessons to explain how these amazing machines work">
+		<meta name="keywords" content="civil helicopters, military helicopters, rotor, safety, turbomeca, collective, cyclic, variant, blades">
+		<meta name="author" content="Uroš Jovanović">
+		
+		<script type="text/javascript" src="jquery-1.9.0.js"></script>
+		<script type="text/javascript" src="header.js"></script>
+		<script type="text/javascript" src="template.js"></script>
+		
+		<link rel="shortcut icon" href="Images/Icon1.jpg">
+		<link rel="stylesheet" type="text/css" href="template.css">
+	</head>
+	<body>
+		<!-- Header -->
+		<div id="header-wrapper">
+			<div id="header">
+				<div id="header-logo">
+					<a href="index.html">
+						<img src="Images/original.png" id="logo" alt="heli science logo" />
+						<img src="Images/pcfinal.png" id="tlogo" alt="heli science tlogo" />
+					</a>
+				</div>
+				<div id="header-hd-wrapper">
+					<div id="hd-search">
+						<div id="search-form-wrapper">
+							<form action="search.html" method="GET" id="search-form" style="display: none;">
+								<input type="text" id="TBsearch" name="word" placeholder="Search for models, companies..." />
+								<input type="submit" id="BTNsubmit-search" value="SEARCH" />
+							</form>
+						</div>
+						<div id="search-spyglass">
+							<img src="Images/transparent.png" id="spyglass-img" alt="spyglass" onclick="appear();" class="cursor" />
+						</div>
+					</div>
+					<div id="hd-links">
+						<ul>
+							<li> 
+								<a href="#" id="a-login" class="xs-color xs-spacing" onclick="return false">Log in</a>
+							</li>
+							<li>
+								<a href="signup.html" class="xs-color xs-spacing">Sign up</a>
+							</li>
+							<li>
+								<a href="#" id="a-content" class="xs-nospacing" onclick="return false" >
+									<img src="Images/menu.png" id="triangle-img" alt="triangle" />
+								</a>
+							</li>
+						</ul>
+						<!-- Content dropdown -->
+						<div id="hd-content">
+							<img src="Images/rotmenu.png" alt="point" />
+							<div id="content">
+								<ul>
+									<li> <a href="documentation.pdf" target="_blank">Documentation</a> </li>
+									<li> <a href="glossary_index.pdf" target="_blank">Glossary</a> </li>
+									<li> <a href="sitemap.xml" target="_blank">Sitemap</a> </li>
+								</ul>
+							</div>
+						</div>
+						<!-- Log in dropdown -->
+						<div id="hd-login">
+							<img src="Images/rotmenu.png" alt="point" />
+							<div id="login">
+								<form id="form-login" action="" method="">
+									<table>
+										<tr>
+											<td> <strong>Email</strong> </td>
+										</tr>
+										<tr>
+											<td> <input type="text" id="TBloginemail" class="input" /> </td>
+										</tr>
+										<tr>
+											<td> <strong>Password</strong> </td>
+										</tr>
+										<tr>
+											<td> <input type="text" id="TBloginpass" class="input" /> </td>
+										</tr>
+										<tr>
+											<td> <input type="button" id="BTNsubmit-login" value="Log in" /> </td>
+										</tr>
+									</table>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Main -->
+		<div id="main-wrapper">
+			<div id="slider">
+				<img src="Images/ch53eweb.png" alt="ch53e image" />
+			</div>
+			<div id="introduction">
+				<div id="introduction-left">
+					<h1>Introduction</h1>
+				</div>
+				<div id="introduction-right">
+					<p>
+						The Sikorsky CH-53E Super Stallion is the largest and heavies helicopter in United States
+						military. This three-engined aircraft was designed for carrying up to 33 tones of external loads.
+						The only aircraft that can lift other aircraft as heavy as itself.
+					</p>
+				</div>
+			</div>
+			<div id="main-content-wrapper">
+				<div class="section" id="aircraft">
+					<div class="section-left">
+						<h2>Aircraft</h2>
+					</div>
+					<div class="section-right">
+						<h3 class="h-panel" id="h-panel1">Development</h3>
+						<div class="panel" id="panel1">
+							<p>
+								The CH-53 was the product of the U.S. Marines' "Heavy Helicopter Experimental" competition begun
+								in 1962. The helicopter was deisignated "CH-53A Sea Stallion" and delivery of production helicopters
+								began in 1966. The first CH-53As were powered by two General Electric T64-GE-6 turboshaft engines
+								with 2,125kW and had a mixmum gross weight of 20,865 kg including 9,072 kg in payload.
+								<br/><br/>
+								Variants of the original CH-53A Sea STallion included the RH-53A, HH-53, CH-53D, CH-53G and MH-53H.
+								The RH-53A were used by the US Navy for mine sweeping. The CH-53G was a version of the CH-53D
+								produced in West Germany for the German Army.
+							</p>
+						</div>
+						<h3 class="h-panel" id="h-panel2">Design</h3>
+						<div class="panel" id="panel2">
+							<p>
+								Although similar in dimensions, the three engine CH-53E Super Stallion is a much more powerfull aircraft
+								than the original CH-53A Sea Stallion.
+								<br/>
+								The CH-53E also added a large main rotor system with a seventh blade.
+								Super Stallion has a cruise speed of 278 km/h and a range of 1,000 km. It is also fitted with a forward
+								extendable in-flight refueling probe and it can also hoist hose refuel from a surface ship while in hover mode.
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="section" id="details">
+					<div class="section-left">
+						<h2>Technical data</h2>
+					</div>
+					<div class="section-right">
+						<h3 class="h-panel" id="h-panel4">Avionics and Flight Controls</h3>
+						<div class="panel" id="panel4">
+							<p>
+								Rockweel Collins Avionics Management System
+								<br/>
+								Fly-by-wire flight controls
+								<br/>
+								Pilot/co-pilot/crew chief/4th crew
+								<br/>
+								FLIR with helmet-mounted navigational displays
+								<br/>
+								Aircraft Survivability Equipment (ASE)
+							</p>
+						</div>
+						<h3 class="h-panel" id="h-panel5">Power plant and fuel system</h3>
+						<div class="panel" id="panel5">
+							<p>
+								Three T408-GE-400 enginees with less fuel consumption, more power and fewer parts
+								that its predecessor.
+								<br/>
+								Auxiliary Power Unit (APU) with pneumatic start.
+								<br/>
+								Integral EAPPS - Engine Air Particle Protection System
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="strip">
+				<p>Click here to <a href="contact.html">contact us</a> for more information about this model</p>
+			</div>
+		</div>
+		<!-- Footer -->
+		<div id="footer-wrapper">
+			<div id="footer-top">
+				<ul>
+					<li class="main-column">
+						<ul class="sub-ul">
+							<li class="first-row">
+								<strong><b>Helicopters</b> (Civil)</strong>
+							</li>
+							<li>
+								<a href="ec120.html">EC120</a>
+							</li>
+							<li>
+								<a href="ec135.html">EC135</a>
+							</li>
+							<li>
+								<a href="as365.html">AS365</a>
+							</li>
+							<li>
+								<a href="b206.html">Bell206</a>
+							</li>
+						</ul>
+					</li>
+					<li class="main-column">
+						<ul class="sub-ul">
+							<li class="first-row">
+								<strong><b>Helicopters</b> (Military)</strong>
+							</li>
+							<li>
+								<a href="uh60.html">UH60</a>
+							</li>
+							<li>
+								<a href="ch53e.html">CH53e</a>
+							</li>
+							<li>
+								<a href="as565.html">AS565</a>
+							</li>
+							<li>
+								<a href="ah64.html">AH64</a>
+							</li>
+						</ul>
+					</li>
+					<li class="main-column">
+						<ul class="sub-ul">
+							<li class="first-row">
+								<strong>Manufacturers</strong>
+							</li>
+							<li>
+								<a href="bell.html">Bell</a>
+							</li>
+							<li>
+								<a href="airbus.html">Airbus</a>
+							</li>
+							<li>
+								<a href="sikorsky.html">Sikorsky</a>
+							</li>
+						</ul>
+					</li>
+					<li class="main-column">
+						<ul class="sub-ul">
+							<li class="first-row">
+								<strong>Lessons</strong>
+							</li>
+							<li>
+								<a href="auto.html">Autorotation</a>
+							</li>
+							<li>
+								<a href="rotorc.html">Rotor configuration</a>
+							</li>
+							<li>
+								<a href="antitorque.html">Anti-torque systems</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<div id="footer-bottom">
+				<ul class="main-ul">
+					<li class="column" >
+						<ul class="column-ul"> 
+							<li class="column-row followus-row">
+								<strong id="strongf1">Follow us on</strong>
+							</li>
+						</ul>
+					</li>
+					<li class="column">
+						<ul class="column-ul"> 
+							<li class="column-row">
+								<ul class="column-row-ul">
+									<li class="row-icon"> 
+										<img src="Images/transparent.png" id="facebook-icon" alt="facebook icon" />
+									</li>
+									<li class="row-text">
+										<a href="http://www.facebook.com" target="_blank">Facebook</a>
+									</li>
+								</ul>
+							</li>
+							<li class="column-row">
+								<ul class="column-row-ul">
+									<li class="row-icon">  
+										<img src="Images/transparent.png" id="twitter-icon" alt="twitter icon" />
+									</li>
+									<li class="row-text" > 
+										<a href="http://www.twitter.com" target="_blank">Twitter</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li class="column">
+						<ul class="column-ul"> 
+							<li class="column-row">
+								<ul class="column-row-ul">
+									<li class="row-icon"> 
+										<img src="Images/transparent.png" id="youtube-icon" alt="youtube icon" />
+									</li>
+									<li class="row-text">
+										<a href="http://www.youtube.com" target="_blank">Youtube</a>
+									</li>
+								</ul>
+							</li>
+							<li class="column-row">
+								<ul class="column-row-ul">
+									<li class="row-icon">  
+										<img src="Images/transparent.png" id="linkedin-icon" alt="linkedin icon" />
+									</li>
+									<li class="row-text"> 
+										<a href="http://www.linkedin.com" target="_blank">Linkedin</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li class="column">
+						<ul class="column-ul"> 
+							<li class="column-row">
+								<ul class="column-row-ul">
+									<li class="row-icon">  
+										<img src="Images/transparent.png" id="googleplus-icon" alt="google plus icon" />
+									</li>
+									<li class="row-text"> 
+										<a href="https://plus.google.com" target="_blank">Google+</a>
+									</li>
+								</ul>
+							</li>
+							<li class="column-row">
+								<ul class="column-row-ul">
+									<li class="row-icon">  
+										<img src="Images/transparent.png" id="rss-icon" alt="rss icon" />
+									</li>
+									<li class="row-text"> 
+										<a href="rss.xml">RSS</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li class="column">
+						<ul class="website-column"> 
+							<li class="website-row">
+								<strong id="strongf2">Content</strong>
+							</li>
+							<li class="website-row">
+								<a href="documentation.pdf" target="_blank">Documentation</a>
+							</li>
+							<li class="website-row">
+								<a href="glossary_index.pdf" target="_blank">Glossary</a>
+							</li>
+							<li class="website-row">
+								<a href="sitemap.xml">Sitemap</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<p> 
+					&copy Helicopter science 2016 by <a href="author.html">UBJ</a>
+				</p>
+			</div>
+		</div>
+	</body>
+</html>

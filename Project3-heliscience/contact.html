@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Heli Science | Contact</title>
+		<meta charset="UTF-8">
+		<meta name="description" content="helicopter science is a place for helicopter entusiasts and rookies, we analyze manufacturers,
+		their models and we give lessons to explain how these amazing machines work">
+		<meta name="keywords" content="civil helicopters, military helicopters, rotor, safety, turbomeca, collective, cyclic, variant, blades">
+		<meta name="author" content="Uroš Jovanović">
+		
+		<script type="text/javascript" src="expcontact.js"></script>
+		<script type="text/javascript" src="jquery-1.9.0.js"></script>
+		<script type="text/javascript" src="header.js"></script>
+		
+		<link rel="shortcut icon" href="Images/Icon1.jpg">
+		<link rel="stylesheet" type="text/css" href="contactstyle.css">
+	</head>
+	<body>
+		<!-- Header -->
+		<div id="header-wrapper">
+			<div id="header">
+				<div id="header-logo">
+					<a href="index.html">
+						<img src="Images/original.png" id="logo" alt="heli science logo" />
+						<img src="Images/pcfinal.png" id="tlogo" alt="heli science tlogo" />
+					</a>
+				</div>
+				<div id="header-hd-wrapper">
+					<div id="hd-search">
+						<div id="search-form-wrapper">
+							<form action="search.html" method="GET" id="search-form" style="display: none;">
+								<input type="text" id="TBsearch" name="word" placeholder="Search for models, companies..." />
+								<input type="submit" id="BTNsubmit-search" value="SEARCH" />
+							</form>
+						</div>
+						<div id="search-spyglass">
+							<img src="Images/transparent.png" id="spyglass-img" alt="spyglass" onclick="appear();" class="cursor" />
+						</div>
+					</div>
+					<div id="hd-links">
+						<ul>
+							<li> 
+								<a href="#" id="a-login" class="xs-color xs-spacing" onclick="return false">Log in</a>
+							</li>
+							<li>
+								<a href="signup.html" class="xs-color xs-spacing">Sign up</a>
+							</li>
+							<li>
+								<a href="#" id="a-content" class="xs-nospacing" onclick="return false" >
+									<img src="Images/menu.png" id="triangle-img" alt="triangle" />
+								</a>
+							</li>
+						</ul>
+						<!-- Content dropdown -->
+						<div id="hd-content">
+							<img src="Images/rotmenu.png" alt="point" />
+							<div id="content">
+								<ul>
+									<li> <a href="documentation.pdf" target="_blank">Documentation</a> </li>
+									<li> <a href="glossary_index.pdf" target="_blank">Glossary</a> </li>
+									<li> <a href="sitemap.xml" target="_blank">Sitemap</a> </li>
+								</ul>
+							</div>
+						</div>
+						<!-- Log in dropdown -->
+						<div id="hd-login">
+							<img src="Images/rotmenu.png" alt="point" />
+							<div id="login">
+								<form id="" action="" method="">
+									<table>
+										<tr>
+											<td>
+												<strong>Email</strong>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<input type="text" id="" class="input" />
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<strong>Password</strong>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<input type="text" id="" class="input" />
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<input type="button" id="BTNsubmit-login" value="Log in" />
+											</td>
+										</tr>
+									</table>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Main -->
+		<div id="contact-wrapper" >
+			<div id="contact-form-wrapper" >
+				<form action="" method="" id="contact-form" name="contact-form" >
+					<table>
+						<tr>
+							<td colspan="2" >
+								<h1>Contact</h1>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="2" >
+								<p>
+									Give us your suggestions or comments. Ask us if you have any questions regarding how
+									helicopters work, any helicopter manufacturer or their helicopter models.
+									We will be glad to help you!
+								</p>
+							</td>
+						</tr>
+						<tr>
+							<td> 
+								<strong>Name *</strong>
+							</td>
+							<td>
+								<input type="text" id="TBname" class="input-wide" placeholder="" autofocus />
+							</td>
+						</tr>
+						<tr>
+							<td> 
+								<strong>Email *</strong>
+							</td>
+							<td>
+								<input type="text" id="TBemail" class="input-wide" placeholder="" />
+							</td>
+						</tr>
+						<tr>
+							<td> 
+								<strong>Message *</strong>
+							</td>
+							<td>
+								<textarea id="TAmessage" rows="12" cols="49"></textarea>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="2" >
+								<input type="button" id="BTNsend" value="SEND" onclick="auditform();" >
+							</td>
+						</tr>
+					</table>
+				</form>
+			</div>
+			<div id="contact-information">
+				<table>
+					<tr>
+						<th colspan="2" align="left">
+							<h2>Contact information</h2>
+						</th>
+					</tr>
+					<tr>
+						<td> 
+							<strong>Telephone</strong>
+						</td>
+						<td>
+							+47 501 643
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<strong>Email</strong>
+						</td>
+						<td>
+							<a href="mailto:support@hs.com&subject=Contact">support@hs.com</a>
+						</td>
+					<tr>
+					<tr>
+						<td>
+							<strong>Address</strong>
+						</td>
+						<td>
+							Langgatan 3a<br/>
+							37500 Falun<br/>
+							Sweden
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+		<!-- Footer -->
+		<div id="footer-wrapper">
+			<div id="footer-top">
+				<ul>
+					<li class="main-column">
+						<ul class="sub-ul">
+							<li class="first-row">
+								<strong><b>Helicopters</b> (Civil)</strong>
+							</li>
+							<li>
+								<a href="ec120.html">EC120</a>
+							</li>
+							<li>
+								<a href="ec135.html">EC135</a>
+							</li>
+							<li>
+								<a href="as365.html">AS365</a>
+							</li>
+							<li>
+								<a href="b206.html">Bell206</a>
+							</li>
+						</ul>
+					</li>
+					<li class="main-column">
+						<ul class="sub-ul">
+							<li class="first-row">
+								<strong><b>Helicopters</b> (Military)</strong>
+							</li>
+							<li>
+								<a href="uh60.html">UH60</a>
+							</li>
+							<li>
+								<a href="ch53e.html">CH53e</a>
+							</li>
+							<li>
+								<a href="as565.html">AS565</a>
+							</li>
+							<li>
+								<a href="ah64.html">AH64</a>
+							</li>
+						</ul>
+					</li>
+					<li class="main-column">
+						<ul class="sub-ul">
+							<li class="first-row">
+								<strong>Manufacturers</strong>
+							</li>
+							<li>
+								<a href="bell.html">Bell</a>
+							</li>
+							<li>
+								<a href="airbus.html">Airbus</a>
+							</li>
+							<li>
+								<a href="sikorsky.html">Sikorsky</a>
+							</li>
+						</ul>
+					</li>
+					<li class="main-column">
+						<ul class="sub-ul">
+							<li class="first-row">
+								<strong>Lessons</strong>
+							</li>
+							<li>
+								<a href="auto.html">Autorotation</a>
+							</li>
+							<li>
+								<a href="rotorc.html">Rotor configuration</a>
+							</li>
+							<li>
+								<a href="antitorque.html">Anti-torque systems</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<div id="footer-bottom">
+				<ul class="main-ul">
+					<li class="column" >
+						<ul class="column-ul"> 
+							<li class="column-row followus-row">
+								<strong id="strongf1">Follow us on</strong>
+							</li>
+						</ul>
+					</li>
+					<li class="column">
+						<ul class="column-ul"> 
+							<li class="column-row">
+								<ul class="column-row-ul">
+									<li class="row-icon"> 
+										<img src="Images/transparent.png" id="facebook-icon" alt="facebook icon" />
+									</li>
+									<li class="row-text">
+										<a href="http://www.facebook.com" target="_blank">Facebook</a>
+									</li>
+								</ul>
+							</li>
+							<li class="column-row">
+								<ul class="column-row-ul">
+									<li class="row-icon">  
+										<img src="Images/transparent.png" id="twitter-icon" alt="twitter icon" />
+									</li>
+									<li class="row-text" > 
+										<a href="http://www.twitter.com" target="_blank">Twitter</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li class="column">
+						<ul class="column-ul"> 
+							<li class="column-row">
+								<ul class="column-row-ul">
+									<li class="row-icon"> 
+										<img src="Images/transparent.png" id="youtube-icon" alt="youtube icon" />
+									</li>
+									<li class="row-text">
+										<a href="http://www.youtube.com" target="_blank">Youtube</a>
+									</li>
+								</ul>
+							</li>
+							<li class="column-row">
+								<ul class="column-row-ul">
+									<li class="row-icon">  
+										<img src="Images/transparent.png" id="linkedin-icon" alt="linkedin icon" />
+									</li>
+									<li class="row-text"> 
+										<a href="http://www.linkedin.com" target="_blank">Linkedin</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li class="column">
+						<ul class="column-ul"> 
+							<li class="column-row">
+								<ul class="column-row-ul">
+									<li class="row-icon">  
+										<img src="Images/transparent.png" id="googleplus-icon" alt="google plus icon" />
+									</li>
+									<li class="row-text"> 
+										<a href="https://plus.google.com" target="_blank" >Google+</a>
+									</li>
+								</ul>
+							</li>
+							<li class="column-row">
+								<ul class="column-row-ul">
+									<li class="row-icon">  
+										<img src="Images/transparent.png" id="rss-icon" alt="rss icon" />
+									</li>
+									<li class="row-text"> 
+										<a href="rss.xml">RSS</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li class="column">
+						<ul class="website-column"> 
+							<li class="website-row">
+								<strong id="strongf2">Content</strong>
+							</li>
+							<li class="website-row">
+								<a href="documentation.pdf" target="_blank">Documentation</a>
+							</li>
+							<li class="website-row">
+								<a href="glossary_index.pdf" target="_blank">Glossary</a>
+							</li>
+							<li class="website-row">
+								<a href="sitemap.xml">Sitemap</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<p> 
+					&copy Helicopter science 2016 by <a href="author.html">UBJ</a>
+				</p>
+			</div>
+		</div>
+	</body>
+</html>

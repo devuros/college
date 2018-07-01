@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>AH64</title>
+		<meta charset="UTF-8">
+		<meta name="description" content="helicopter science is a place for helicopter entusiasts and rookies, we analyze manufacturers,
+		their models and we give lessons to explain how these amazing machines work">
+		<meta name="keywords" content="civil helicopters, military helicopters, rotor, safety, turbomeca, collective, cyclic, variant, blades">
+		<meta name="author" content="Uroš Jovanović">
+		
+		<script type="text/javascript" src="jquery-1.9.0.js"></script>
+		<script type="text/javascript" src="header.js"></script>
+		<script type="text/javascript" src="template.js"></script>
+		
+		<link rel="shortcut icon" href="Images/Icon1.jpg">
+		<link rel="stylesheet" type="text/css" href="template.css">
+	</head>
+	<body>
+		<!-- Header -->
+		<div id="header-wrapper">
+			<div id="header">
+				<div id="header-logo">
+					<a href="index.html">
+						<img src="Images/original.png" id="logo" alt="heli science logo" />
+						<img src="Images/pcfinal.png" id="tlogo" alt="heli science tlogo" />
+					</a>
+				</div>
+				<div id="header-hd-wrapper">
+					<div id="hd-search">
+						<div id="search-form-wrapper">
+							<form action="search.html" method="GET" id="search-form" style="display: none;">
+								<input type="text" id="TBsearch" name="word" placeholder="Search for models, companies..." />
+								<input type="submit" id="BTNsubmit-search" value="SEARCH" />
+							</form>
+						</div>
+						<div id="search-spyglass">
+							<img src="Images/transparent.png" id="spyglass-img" alt="spyglass" onclick="appear();" class="cursor" />
+						</div>
+					</div>
+					<div id="hd-links">
+						<ul>
+							<li> 
+								<a href="#" id="a-login" class="xs-color xs-spacing" onclick="return false">Log in</a>
+							</li>
+							<li>
+								<a href="signup.html" class="xs-color xs-spacing">Sign up</a>
+							</li>
+							<li>
+								<a href="#" id="a-content" class="xs-nospacing" onclick="return false" >
+									<img src="Images/menu.png" id="triangle-img" alt="triangle" />
+								</a>
+							</li>
+						</ul>
+						<!-- Content dropdown -->
+						<div id="hd-content">
+							<img src="Images/rotmenu.png" alt="point" />
+							<div id="content">
+								<ul>
+									<li> <a href="documentation.pdf" target="_blank">Documentation</a> </li>
+									<li> <a href="glossary_index.pdf" target="_blank">Glossary</a> </li>
+									<li> <a href="sitemap.xml" target="_blank">Sitemap</a> </li>
+								</ul>
+							</div>
+						</div>
+						<!-- Log in dropdown -->
+						<div id="hd-login">
+							<img src="Images/rotmenu.png" alt="point" />
+							<div id="login">
+								<form id="form-login" action="" method="">
+									<table>
+										<tr>
+											<td> <strong>Email</strong> </td>
+										</tr>
+										<tr>
+											<td> <input type="text" id="TBloginemail" class="input" /> </td>
+										</tr>
+										<tr>
+											<td> <strong>Password</strong> </td>
+										</tr>
+										<tr>
+											<td> <input type="text" id="TBloginpass" class="input" /> </td>
+										</tr>
+										<tr>
+											<td> <input type="button" id="BTNsubmit-login" value="Log in" /> </td>
+										</tr>
+									</table>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Main -->
+		<div id="main-wrapper">
+			<div id="slider">
+				<img src="Images/ah64web.png" alt="ah 64 image" />
+			</div>
+			<div id="introduction">
+				<div id="introduction-left">
+					<h1>Introduction</h1>
+				</div>
+				<div id="introduction-right">
+					<p>
+						The AH64 Apache is the world's most advanced multi-role combat helicopter.
+						Boeing has delived more than 2,100 Apaches to customers around the worlds since the
+						aircraft entered production! 
+					</p>
+				</div>
+			</div>
+			<div id="main-content-wrapper">
+				<div class="section" id="aircraft">
+					<div class="section-left">
+						<h2>Aircraft</h2>
+					</div>
+					<div class="section-right">
+						<h3 class="h-panel" id="h-panel1">General</h3>
+						<div class="panel" id="panel1">
+							<p>
+								The Apache originally started as the Model 77 developed by Hughes Helicopters for the U.S. army program to
+								replace the AH-1 Cobra. The first production AH-64D Apache Longbow, an upgraded Apache variant, was
+								delivered to the Army in March 1997.
+								<br/><br/>
+								The AH64 Apache has a four-blade main rotor and four-blade tail rotor. The crew sits in tandem,
+								with the pilot sitting behind and above the copilot/gunner. Both crew members are capable of flying
+								the aircraft and performing methods of weapon engagements independently.
+								<br/><br/>
+								The crew compartments has shielding between the cockipits, such that least one crew member can survive hits.
+								The compartment and rotor blades are designed to sustain a hit from 23mm rounds.
+							</p>
+						</div>
+						<h3 class="h-panel" id="h-panel2">Avionics and targeting</h3>
+						<div class="panel" id="panel2">
+							<p>
+								One of the revolutionary features of the Apache was its helmet mounted display, the Integrated Helmet and Display
+								Sighting System (IHADSS). The AH64 was deisgned to perform in front-line environments, and to operate at night
+								or day and during adverse weather conditions. 
+								<br/>
+								Various sensors and onboards avionics allow the Apache to perform
+								in these conditions. Such systems include:
+								TADS/PNVS, passive infrared contermeasures, GP. Longbow- equipped Paches can locate up to 256 targets
+								simultaneously within 50km.
+							</p>
+						</div>
+						<h3 class="h-panel" id="h-panel3">Armaments and configuration</h3>
+						<div class="panel" id="panel3">
+							<p>
+								AH64 is adaptable to numerious different roles within its context as Close Combat Attack (CCA).
+								In addition to the 30 mm chain gun the apache carries a range of external stores and weapons on its stub-wing pylons,
+								typically a mixture of anti-tank missiles and general-purpose unguided 70 mm rockets.
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="section" id="details">
+					<div class="section-left">
+						<h2>Technical data</h2>
+					</div>
+					<div class="section-right">
+						<h3 class="h-panel" id="h-panel4">General</h3>
+						<div class="panel" id="panel4">
+							<p>
+								Two high-performance turboshaft engines and maximum cruise speed of 284 kph.
+								<br/>
+								Laser, infrared, and other systems, including target acquisition designation sight/pilot night vision
+								sensor to located, track, and attack targets.
+								<br/>
+								A combination of laser-guided precision Hellfire missiles, 70 mm rockets, and a 30 mm automatic canno with up to
+								1,200 high-explosive, dual-purpose ammunition rounds.
+							</p>
+						</div>
+						<h3 class="h-panel" id="h-panel5">Enhancements</h3>
+						<div class="panel" id="panel5">
+							<p>
+								Longer-range weapons accuracy and all-weather/night flight.
+								Detection of object (moving or stationary) without being detected.
+								Classification and threat-prioritization of up to 128 targets in less than a minute.
+								Integrated sensors, networking, and digital communictaions for situation 
+								awareness, management of the combat areana in real time, and digital
+								transmission of images and target locations to join operations battlefield commanders.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="strip">
+				<p>Click here to <a href="contact.html">contact us</a> for more information about this model</p>
+			</div>
+		</div>
+		<!-- Footer -->
+		<div id="footer-wrapper">
+			<div id="footer-top">
+				<ul>
+					<li class="main-column">
+						<ul class="sub-ul">
+							<li class="first-row">
+								<strong><b>Helicopters</b> (Civil)</strong>
+							</li>
+							<li>
+								<a href="ec120.html">EC120</a>
+							</li>
+							<li>
+								<a href="ec135.html">EC135</a>
+							</li>
+							<li>
+								<a href="as365.html">AS365</a>
+							</li>
+							<li>
+								<a href="b206.html">Bell206</a>
+							</li>
+						</ul>
+					</li>
+					<li class="main-column">
+						<ul class="sub-ul">
+							<li class="first-row">
+								<strong><b>Helicopters</b> (Military)</strong>
+							</li>
+							<li>
+								<a href="uh60.html">UH60</a>
+							</li>
+							<li>
+								<a href="ch53e.html">CH53e</a>
+							</li>
+							<li>
+								<a href="as565.html">AS565</a>
+							</li>
+							<li>
+								<a href="ah64.html">AH64</a>
+							</li>
+						</ul>
+					</li>
+					<li class="main-column">
+						<ul class="sub-ul">
+							<li class="first-row">
+								<strong>Manufacturers</strong>
+							</li>
+							<li>
+								<a href="bell.html">Bell</a>
+							</li>
+							<li>
+								<a href="airbus.html">Airbus</a>
+							</li>
+							<li>
+								<a href="sikorsky.html">Sikorsky</a>
+							</li>
+						</ul>
+					</li>
+					<li class="main-column">
+						<ul class="sub-ul">
+							<li class="first-row">
+								<strong>Lessons</strong>
+							</li>
+							<li>
+								<a href="auto.html">Autorotation</a>
+							</li>
+							<li>
+								<a href="rotorc.html">Rotor configuration</a>
+							</li>
+							<li>
+								<a href="antitorque.html">Anti-torque systems</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<div id="footer-bottom">
+				<ul class="main-ul">
+					<li class="column" >
+						<ul class="column-ul"> 
+							<li class="column-row followus-row">
+								<strong id="strongf1">Follow us on</strong>
+							</li>
+						</ul>
+					</li>
+					<li class="column">
+						<ul class="column-ul"> 
+							<li class="column-row">
+								<ul class="column-row-ul">
+									<li class="row-icon"> 
+										<img src="Images/transparent.png" id="facebook-icon" alt="facebook icon" />
+									</li>
+									<li class="row-text">
+										<a href="http://www.facebook.com" target="_blank">Facebook</a>
+									</li>
+								</ul>
+							</li>
+							<li class="column-row">
+								<ul class="column-row-ul">
+									<li class="row-icon">  
+										<img src="Images/transparent.png" id="twitter-icon" alt="twitter icon" />
+									</li>
+									<li class="row-text" > 
+										<a href="http://www.twitter.com" target="_blank">Twitter</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li class="column">
+						<ul class="column-ul"> 
+							<li class="column-row">
+								<ul class="column-row-ul">
+									<li class="row-icon"> 
+										<img src="Images/transparent.png" id="youtube-icon" alt="youtube icon" />
+									</li>
+									<li class="row-text">
+										<a href="http://www.youtube.com" target="_blank">Youtube</a>
+									</li>
+								</ul>
+							</li>
+							<li class="column-row">
+								<ul class="column-row-ul">
+									<li class="row-icon">  
+										<img src="Images/transparent.png" id="linkedin-icon" alt="linkedin icon" />
+									</li>
+									<li class="row-text"> 
+										<a href="http://www.linkedin.com" target="_blank">Linkedin</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li class="column">
+						<ul class="column-ul"> 
+							<li class="column-row">
+								<ul class="column-row-ul">
+									<li class="row-icon">  
+										<img src="Images/transparent.png" id="googleplus-icon" alt="google plus icon" />
+									</li>
+									<li class="row-text"> 
+										<a href="https://plus.google.com" target="_blank">Google+</a>
+									</li>
+								</ul>
+							</li>
+							<li class="column-row">
+								<ul class="column-row-ul">
+									<li class="row-icon">  
+										<img src="Images/transparent.png" id="rss-icon" alt="rss icon" />
+									</li>
+									<li class="row-text"> 
+										<a href="rss.xml">RSS</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li class="column">
+						<ul class="website-column"> 
+							<li class="website-row">
+								<strong id="strongf2">Content</strong>
+							</li>
+							<li class="website-row">
+								<a href="documentation.pdf" target="_blank">Documentation</a>
+							</li>
+							<li class="website-row">
+								<a href="glossary_index.pdf" target="_blank">Glossary</a>
+							</li>
+							<li class="website-row">
+								<a href="sitemap.xml">Sitemap</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<p> 
+					&copy Helicopter science 2016 by <a href="author.html">UBJ</a>
+				</p>
+			</div>
+		</div>
+	</body>
+</html>

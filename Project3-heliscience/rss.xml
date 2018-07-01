@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="rss.xsl"?>
+<rss version="2.0">
+	<channel>
+		<title>Helicopter science</title>
+		<description>Explore helicopter models, learn how they work and find out about companies who make them</description>
+		<link>index.html</link>
+		<item>
+			<title>Bell 206</title>
+			<description>One of Bell's signature model gets a page on our website</description>
+			<link>b206.html</link>
+		</item>
+		<item>
+			<title>H series</title>
+			<description>Airbus renames the EC series to H</description>
+			<link>news.html</link>
+		</item>
+		<item>
+			<title>Profile added</title>
+			<description>Bell helicopters profile added to our website</description>
+			<link>bell.html</link>
+		</item>
+		<item>
+			<title>Autorotation</title>
+			<description>See how helicopters land when they lose engine power or encounter gearbox failure</description>
+			<link>auto.html</link>
+		</item>
+	</channel>
+</rss>

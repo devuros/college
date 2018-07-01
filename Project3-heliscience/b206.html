@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Bell 206</title>
+		<meta charset="UTF-8">
+		<meta name="description" content="helicopter science is a place for helicopter entusiasts and rookies, we analyze manufacturers,
+		their models and we give lessons to explain how these amazing machines work">
+		<meta name="keywords" content="civil helicopters, military helicopters, rotor, safety, turbomeca, collective, cyclic, variant, blades">
+		<meta name="author" content="Uroš Jovanović">
+		
+		<script type="text/javascript" src="jquery-1.9.0.js"></script>
+		<script type="text/javascript" src="header.js"></script>
+		<script type="text/javascript" src="template.js"></script>
+		
+		<link rel="shortcut icon" href="Images/Icon1.jpg">
+		<link rel="stylesheet" type="text/css" href="template.css">
+	</head>
+	<body>
+		<!-- Header -->
+		<div id="header-wrapper">
+			<div id="header">
+				<div id="header-logo">
+					<a href="index.html">
+						<img src="Images/original.png" id="logo" alt="heli science logo" />
+						<img src="Images/pcfinal.png" id="tlogo" alt="heli science tlogo" />
+					</a>
+				</div>
+				<div id="header-hd-wrapper">
+					<div id="hd-search">
+						<div id="search-form-wrapper">
+							<form action="search.html" method="GET" id="search-form" style="display: none;">
+								<input type="text" id="TBsearch" name="word" placeholder="Search for models, companies..." />
+								<input type="submit" id="BTNsubmit-search" value="SEARCH" />
+							</form>
+						</div>
+						<div id="search-spyglass">
+							<img src="Images/transparent.png" id="spyglass-img" alt="spyglass" onclick="appear();" class="cursor" />
+						</div>
+					</div>
+					<div id="hd-links">
+						<ul>
+							<li> 
+								<a href="#" id="a-login" class="xs-color xs-spacing" onclick="return false">Log in</a>
+							</li>
+							<li>
+								<a href="signup.html" class="xs-color xs-spacing">Sign up</a>
+							</li>
+							<li>
+								<a href="#" id="a-content" class="xs-nospacing" onclick="return false" >
+									<img src="Images/menu.png" id="triangle-img" alt="triangle" />
+								</a>
+							</li>
+						</ul>
+						<!-- Content dropdown -->
+						<div id="hd-content">
+							<img src="Images/rotmenu.png" alt="point" />
+							<div id="content">
+								<ul>
+									<li> <a href="documentation.pdf" target="_blank">Documentation</a> </li>
+									<li> <a href="glossary_index.pdf" target="_blank">Glossary</a> </li>
+									<li> <a href="sitemap.xml" target="_blank">Sitemap</a> </li>
+								</ul>
+							</div>
+						</div>
+						<!-- Log in dropdown -->
+						<div id="hd-login">
+							<img src="Images/rotmenu.png" alt="point" />
+							<div id="login">
+								<form id="form-login" action="" method="">
+									<table>
+										<tr>
+											<td> <strong>Email</strong> </td>
+										</tr>
+										<tr>
+											<td> <input type="text" id="TBloginemail" class="input" /> </td>
+										</tr>
+										<tr>
+											<td> <strong>Password</strong> </td>
+										</tr>
+										<tr>
+											<td> <input type="text" id="TBloginpass" class="input" /> </td>
+										</tr>
+										<tr>
+											<td> <input type="button" id="BTNsubmit-login" value="Log in" /> </td>
+										</tr>
+									</table>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Main -->
+		<div id="main-wrapper">
+			<div id="slider">
+				<img src="Images/b206web.png" alt="Bell 206" />
+			</div>
+			<div id="introduction">
+				<div id="introduction-left">
+					<h1>Introduction</h1>
+				</div>
+				<div id="introduction-right">
+					<p>
+						The most famous helicopter ever made. Bell 206 is a symbol for helicopters everwhere in the world.
+						If you ever seen a helicopter, then you remember these slick lines with a specific nose design that 
+						no other helicopter has.
+					</p>
+				</div>
+			</div>
+			<div id="main-content-wrapper">
+				<div class="section" id="aircraft">
+					<div class="section-left">
+						<h2>Aircraft</h2>
+					</div>
+					<div class="section-right">
+						<h3 class="h-panel" id="h-panel1">General</h3>
+						<div class="panel" id="panel1">
+							<p>
+								The Bell 206 is a familiy of two-bladed, single or twin engined helicopters, manufactured by
+								Bell Helicopter in Mirabel, Queebec. It was designed to be the ideal flying workplace.
+								it can hold up to six passengers with one pilot comfortably and the club-passenger
+								seating allow for face-to-face conversations. 
+								<br/><br/>
+								The durable design features the powerful Rolls-Royce 260-C30P engine. The high-inertia two-bladed
+								rotor system provides exceptional stability. All of which make the Bell 206 an outstanding value
+								to your fleet.
+							</p>
+						</div>
+						<h3 class="h-panel" id="h-panel2">Safety</h3>
+						<div class="panel" id="panel2">
+							<p>
+								206 is equipped with a variety of safety features including:
+								reliable engines, transmission with chip detection, debris collection,
+								supert autorotatiom , rollover bulkheads, rupture-resistant fuel cells,
+								collective-mounted throttle and optopnal wire strike protection.
+							</p>
+						</div>
+						<h3 class="h-panel" id="h-panel3">Cabin</h3>
+						<div class="panel" id="panel3">
+							<p>
+								The interior of the Bell 206 allows for multiple mission configurations. A spacious
+								cabin that provides a comfortable club seating arrangement or specialized equipment
+								insertion for medical and parapublic missions.
+								<br/><br/>
+								Large windows and ample ambient light provides excellent visibility for a working environment inside
+								the cabin with exceptional field of view outside the cabin.
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="section" id="details">
+					<div class="section-left">
+						<h2>Technical data</h2>
+					</div>
+					<div class="section-right">
+						<h3 class="h-panel" id="h-panel4">Power plant</h3>
+						<div class="panel" id="panel4">
+							<p>
+								Rolls-Royce Model 250-C30P turboshaft engine.
+								<br/>
+								Fuel control, Bendix
+								<br/>
+								Fuel filter (eliminates anti-ice additive requirement)
+								<br/>
+								Fuel pump, engine mounted
+								<br/>
+								Fuel boot pumps (2 canister type) submerged in main fuel tank
+								<br/>
+								Compressor wash provisions
+								<br/>
+								Fuel system
+								<br/>
+								Oil system
+							</p>
+						</div>
+						<h3 class="h-panel" id="h-panel5">Flight and engine instruments</h3>
+						<div class="panel" id="panel5">
+							<p>
+								Clock, Digital Quartz Crystal Chronometer
+								<br/>
+								Compass, magnetic
+								<br/>
+								Dual tachometer (rotor and engine)
+								<br/>
+								Inclinometer
+								<br/>
+								Indicator, airspeed
+								<br/>
+								Indicator, altimeter
+								<br/>
+								Indicator, engine gas producer speed
+								<br/>
+								Indicator, engine oil pressure/temperature
+								<br/>
+								Indicator, torque meter pressure
+								<br/>
+								Indicator, turbine outlet temperature with over temp light
+							</p>
+						</div>
+						<h3 class="h-panel" id="h-panel6">Rotor and flight controls</h3>
+						<div class="panel" id="panel6">
+							<p>
+								Main rotor, semi-rigid, two-bladed, see-saw type with precone
+								and underslug feathering axis. All metal blades that are moisture
+								proofed and epoxy encapsulated. Flap restraints.
+								<br/>
+								Tail rotor; semi-rigid, two-bladed, see-saw type.
+								<br/>
+								Hydraulis boost system (pump and reservoir module)
+								<br/>
+								Mechanical flight control linkages throughout
+								<br/>
+								Pilot Cyclic Grip has provisions for Optional Equipment Control.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="strip">
+				<p>Click here to <a href="contact.html">contact us</a> for more information about this model</p>
+			</div>
+		</div>
+		<!-- Footer -->
+		<div id="footer-wrapper">
+			<div id="footer-top">
+				<ul>
+					<li class="main-column">
+						<ul class="sub-ul">
+							<li class="first-row">
+								<strong><b>Helicopters</b> (Civil)</strong>
+							</li>
+							<li>
+								<a href="ec120.html">EC120</a>
+							</li>
+							<li>
+								<a href="ec135.html">EC135</a>
+							</li>
+							<li>
+								<a href="as365.html">AS365</a>
+							</li>
+							<li>
+								<a href="b206.html">Bell206</a>
+							</li>
+						</ul>
+					</li>
+					<li class="main-column">
+						<ul class="sub-ul">
+							<li class="first-row">
+								<strong><b>Helicopters</b> (Military)</strong>
+							</li>
+							<li>
+								<a href="uh60.html">UH60</a>
+							</li>
+							<li>
+								<a href="ch53e.html">CH53e</a>
+							</li>
+							<li>
+								<a href="as565.html">AS565</a>
+							</li>
+							<li>
+								<a href="ah64.html">AH64</a>
+							</li>
+						</ul>
+					</li>
+					<li class="main-column">
+						<ul class="sub-ul">
+							<li class="first-row">
+								<strong>Manufacturers</strong>
+							</li>
+							<li>
+								<a href="bell.html">Bell</a>
+							</li>
+							<li>
+								<a href="airbus.html">Airbus</a>
+							</li>
+							<li>
+								<a href="sikorsky.html">Sikorsky</a>
+							</li>
+						</ul>
+					</li>
+					<li class="main-column">
+						<ul class="sub-ul">
+							<li class="first-row">
+								<strong>Lessons</strong>
+							</li>
+							<li>
+								<a href="auto.html">Autorotation</a>
+							</li>
+							<li>
+								<a href="rotorc.html">Rotor configuration</a>
+							</li>
+							<li>
+								<a href="antitorque.html">Anti-torque systems</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<div id="footer-bottom">
+				<ul class="main-ul">
+					<li class="column" >
+						<ul class="column-ul"> 
+							<li class="column-row followus-row">
+								<strong id="strongf1">Follow us on</strong>
+							</li>
+						</ul>
+					</li>
+					<li class="column">
+						<ul class="column-ul"> 
+							<li class="column-row">
+								<ul class="column-row-ul">
+									<li class="row-icon"> 
+										<img src="Images/transparent.png" id="facebook-icon" alt="facebook icon" />
+									</li>
+									<li class="row-text">
+										<a href="http://www.facebook.com" target="_blank">Facebook</a>
+									</li>
+								</ul>
+							</li>
+							<li class="column-row">
+								<ul class="column-row-ul">
+									<li class="row-icon">  
+										<img src="Images/transparent.png" id="twitter-icon" alt="twitter icon" />
+									</li>
+									<li class="row-text" > 
+										<a href="http://www.twitter.com" target="_blank">Twitter</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li class="column">
+						<ul class="column-ul"> 
+							<li class="column-row">
+								<ul class="column-row-ul">
+									<li class="row-icon"> 
+										<img src="Images/transparent.png" id="youtube-icon" alt="youtube icon" />
+									</li>
+									<li class="row-text">
+										<a href="http://www.youtube.com" target="_blank">Youtube</a>
+									</li>
+								</ul>
+							</li>
+							<li class="column-row">
+								<ul class="column-row-ul">
+									<li class="row-icon">  
+										<img src="Images/transparent.png" id="linkedin-icon" alt="linkedin icon" />
+									</li>
+									<li class="row-text"> 
+										<a href="http://www.linkedin.com" target="_blank">Linkedin</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li class="column">
+						<ul class="column-ul"> 
+							<li class="column-row">
+								<ul class="column-row-ul">
+									<li class="row-icon">  
+										<img src="Images/transparent.png" id="googleplus-icon" alt="google plus icon" />
+									</li>
+									<li class="row-text"> 
+										<a href="https://plus.google.com" target="_blank">Google+</a>
+									</li>
+								</ul>
+							</li>
+							<li class="column-row">
+								<ul class="column-row-ul">
+									<li class="row-icon">  
+										<img src="Images/transparent.png" id="rss-icon" alt="rss icon" />
+									</li>
+									<li class="row-text"> 
+										<a href="rss.xml">RSS</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li class="column">
+						<ul class="website-column"> 
+							<li class="website-row">
+								<strong id="strongf2">Content</strong>
+							</li>
+							<li class="website-row">
+								<a href="documentation.pdf" target="_blank">Documentation</a>
+							</li>
+							<li class="website-row">
+								<a href="glossary_index.pdf" target="_blank">Glossary</a>
+							</li>
+							<li class="website-row">
+								<a href="sitemap.xml">Sitemap</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<p> 
+					&copy Helicopter science 2016 by <a href="author.html">UBJ</a>
+				</p>
+			</div>
+		</div>
+	</body>
+</html>

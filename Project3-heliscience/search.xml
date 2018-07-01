@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<terms>
+	<term>
+		<input>ec120</input>
+		<title>EC 120 Colibri</title>
+		<output>
+			The EC120 also known as Colibri has its origins in the P120, first launched in 1997.
+			Order's grew fast and production rose to 6 per month by Eurocopter. It features a wide,
+			ergonomic cabin wtih high levels of external visibility which can accomodate pilot with four passengers.
+		</output>
+		<link>ec120.html</link>
+	</term>
+	<term>
+		<input>ec135</input>
+		<title>EC 135 Ecureuil</title>
+		<output>
+			Roomy, silent and smooth the EC 130 Ecureuil is a single engine helicopter, 
+			is one of Eurocopter's best-selling rotorcraft, nothing that 238 orders had been placed in 2011,
+			a 40 per cent increase over the previous year.
+		</output>
+		<link>ec135.html</link>
+	</term>
+	<term>
+		<input>as365</input>
+		<title>AS 365 N3+ Dauphin</title>
+		<output>
+			AS365 N3+ also known as Dauphin is where experience meets excellence. 
+			This is a medium-weight multipurpose twin-engine helicopter. 
+			This type has been in continuous production for more than 40 years.
+		</output>
+		<link>as365.html</link>
+	</term>
+	<term>
+		<input>bell206</input>
+		<title>Bell 206 Jet Ranger</title>
+		<output>
+			The most famous helicopter ever made. Bell 206 is a symbol for helicopters everwhere in the world. 
+			If you ever seen a helicopter, then you remember these slick lines with a specific nose design
+			that no other helicopter has.
+		</output>
+		<link>b206.html</link>
+	</term>
+	<term>
+		<input>b206</input>
+		<title>Bell 206 Jet Ranger</title>
+		<output>
+			The most famous helicopter ever made. Bell 206 is a symbol for helicopters everwhere in the world. 
+			If you ever seen a helicopter, then you remember these slick lines with a specific nose design
+			that no other helicopter has.
+		</output>
+		<link>b206.html</link>
+	</term>
+	<term>
+		<input>uh60</input>
+		<title>UH 60 Black Hawk</title>
+		<output>
+			The first choice for tactical operations worldwide, versatile, dependable and rugged. 
+			Just three reasons why 27 nations depend on Black Hawk helicopers for multi-mission support.
+		</output>
+		<link>uh60.html</link>
+	</term>
+	<term>
+		<input>ch53e</input>
+		<title>CH 53E Super Stallion</title>
+		<output>
+			The Sikorsky CH-53E Super Stallion is the largest and heavies helicopter in United States military.
+			This three-engined aircraft was designed for carrying up to 33 tones of external loads.
+			The only aircraft that can lift other aircraft as heavy as itself.
+		</output>
+		<link>ch53e.html</link>
+	</term>
+	<term>
+		<input>as565</input>
+		<title>AS 565 Panther</title>
+		<output>
+			The AS565 Panther is a military version of the AS365 Dauphin, it is an all-weather, multi-role helicopter.
+			Designed for operation from ships, offshore locations and land-based sites. 
+			It made it's way to naval and coast guard missions and other kinds of maritime missions.
+		</output>
+		<link>as565.html</link>
+	</term>
+	<term>
+		<input>ah64</input>
+		<title>AH 65 Apache</title>
+		<output>
+			The AH64 Apache is the world's most advanced multi-role combat helicopter.
+			Boeing has delived more than 2,100 Apaches to customers around the worlds since the aircraft entered production!
+		</output>
+		<link>ah64.html</link>
+	</term>
+	<term>
+		<input>bell</input>
+		<title>Bell helicopters</title>
+		<output>
+			Bell helicopter is an American rotorcraft manufacturer headquartered in Fort Worth, Texas. 
+			A division of Textron, Bell manufactures military helicopters and tiltrotor products in and around 
+			Forth Worth, and commercial rotorcraft producs in Mirabel, Quebec. 
+			It also provides training and support services worldwide. 
+		</output>
+		<link>bell.html</link>
+	</term>
+	<term>
+		<input>airbus</input>
+		<title>Airbus helicopters</title>
+		<output>
+			Airbus helicopeters (formerly Eurcopter Group) is the helicopter manufacturing division of Airbus Group. 
+			It is the largest in the industry in terms of revenues and turbine helicopter deliverioes. 
+			Its head office is located in Marseille Provence Airport in Marignane, France, near Marseille. 
+		</output>
+		<link>airbus.html</link>
+	</term>
+	<term>
+		<input>sikorsky</input>
+		<title>Sikorsky helicopters</title>
+		<output>
+			The Sikorsky Aircraft Corporation is an American aircraft manufacturer based in Stratford, Connecticut. 
+			It was established by Igor Sikorsky in 1925 and was among the first companies to manufacture 
+			helicopers for civilian and military use.
+		</output>
+		<link>sikorsky.html</link>
+	</term>
+	<term>
+		<input>autorotation</input>
+		<title>Autorotation</title>
+		<output>
+			Autorotation occrus if there is engine or gearbox failure. It is a state of flight in which the 
+			main rotor system of a helicopter turns by the action of air moving up through the rotor, 
+			rather than engine power driving the rotor.
+		</output>
+		<link>auto.html</link>
+	</term>
+	<term>
+		<input>rotor</input>
+		<title>Rotor configuration</title>
+		<output>
+			In this lesson we will look at different ways that the main rotors can be configured on a helicopter. 
+			We will cover the simplest of them all traditional and moving to the quad configuration.
+		</output>
+		<link>rotorc.html</link>
+	</term>
+	<term>
+		<input>torque</input>
+		<title>Anti-torque systems</title>
+		<output>
+			In this lesson we will look in ways how to cancel the torque created by the rotor blade. 
+			We will only cover anti torque system in the traditional single main rotor systems. 
+		</output>
+		<link>antitorque.html</link>
+	</term>
+</terms>

@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Lesson - Anti torque systems</title>
+		<meta charset="UTF-8">
+		<meta name="description" content="helicopter science is a place for helicopter entusiasts and rookies, we analyze manufacturers,
+		their models and we give lessons to explain how these amazing machines work">
+		<meta name="keywords" content="civil helicopters, military helicopters, rotor, safety, turbomeca, collective, cyclic, variant, blades">
+		<meta name="author" content="Uroš Jovanović">
+		
+		<script type="text/javascript" src="jquery-1.9.0.js"></script>
+		<script type="text/javascript" src="header.js"></script>
+		
+		<link rel="shortcut icon" href="Images/Icon1.jpg">
+		<link rel="stylesheet" type="text/css" href="lessonstyle.css">
+	</head>
+	<body>
+		<!-- Header -->
+		<div id="header-wrapper">
+			<div id="header">
+				<div id="header-logo">
+					<a href="index.html">
+						<img src="Images/original.png" id="logo" alt="heli science logo" />
+						<img src="Images/pcfinal.png" id="tlogo" alt="heli science tlogo" />
+					</a>
+				</div>
+				<div id="header-hd-wrapper">
+					<div id="hd-search">
+						<div id="search-form-wrapper">
+							<form action="search.html" method="GET" id="search-form" style="display: none;">
+								<input type="text" id="TBsearch" name="word" placeholder="Search for models, companies..." />
+								<input type="submit" id="BTNsubmit-search" value="SEARCH" />
+							</form>
+						</div>
+						<div id="search-spyglass">
+							<img src="Images/transparent.png" id="spyglass-img" alt="spyglass" onclick="appear();" class="cursor" />
+						</div>
+					</div>
+					<div id="hd-links">
+						<ul>
+							<li> 
+								<a href="#" id="a-login" class="xs-color xs-spacing" onclick="return false">Log in</a>
+							</li>
+							<li>
+								<a href="signup.html" class="xs-color xs-spacing">Sign up</a>
+							</li>
+							<li>
+								<a href="#" id="a-content" class="xs-nospacing" onclick="return false" >
+									<img src="Images/menu.png" id="triangle-img" alt="triangle" />
+								</a>
+							</li>
+						</ul>
+						<!-- Content dropdown -->
+						<div id="hd-content">
+							<img src="Images/rotmenu.png" alt="point" />
+							<div id="content">
+								<ul>
+									<li> <a href="documentation.pdf" target="_blank">Documentation</a> </li>
+									<li> <a href="glossary_index.pdf" target="_blank">Glossary</a> </li>
+									<li> <a href="sitemap.xml" target="_blank">Sitemap</a> </li>
+								</ul>
+							</div>
+						</div>
+						<!-- Log in dropdown -->
+						<div id="hd-login">
+							<img src="Images/rotmenu.png" alt="point" />
+							<div id="login">
+								<form id="" action="" method="">
+									<table>
+										<tr>
+											<td>
+												<strong>Email</strong>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<input type="text" id="" class="input" />
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<strong>Password</strong>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<input type="text" id="" class="input" />
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<input type="button" id="BTNsubmit-login" value="Log in" />
+											</td>
+										</tr>
+									</table>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Main -->
+		<div id="lesson-wrapper" >
+			<div id="lesson-intro" >
+				<div id="video-and-name-wrapper">
+					<div id="video" >
+						<iframe src="https://www.youtube.com/embed/pt1wDHt0U7o" frameborder="0" allowfullscreen ></iframe>
+					</div>
+					<div id="name" >
+						<h1>Anti-torque systems</h1>
+					</div>
+				</div>
+				<div id="links">
+					<ul>
+						<li class="first-li"> <h4>Manuals</h4> </li>
+						<li> 
+							<a href="https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/helicopter_flying_handbook/media/hfh_ch01.pdf" target="_blank">
+							Introduction to the Helicopter
+							</a>
+						</li>
+						<li> 
+							<a href="https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/helicopter_flying_handbook/media/hfh_ch02.pdf" target="_blank">
+							Aerodynamics of Flight
+							</a>
+						</li>
+						<li> 
+							<a href="https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/helicopter_flying_handbook/media/hfh_ch03.pdf" target="_blank">
+							Helicopter Flight Controls
+							</a> 
+						</li>
+						<li> 
+							<a href="https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/helicopter_flying_handbook/media/hfh_ch04.pdf" target="_blank">
+							Helicopter Components, Sections, and Systems
+							</a> 
+						</li>
+						<li> 
+							<a href="https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/helicopter_flying_handbook/media/hfh_ch07.pdf" target="_blank">
+							Helicopter Performance
+							</a> 
+						</li>
+					</ul>
+					<ul>
+						<li class="first-li"> <h4>Lessons</h4> </li>
+						<li> <a href="auto.html">Autorotation</a> </li>
+						<li> <a href="rotorc.html">Rotor configuration</a> </li>
+						<li> <a href="antitorque.html">Anti-torque systems</a> </li>
+					</ul>
+				</div>
+			</div>
+			<div id="lesson-content">
+				<div class="section">
+					<div class="section-left">
+						<h2>Overview</h2>
+					</div>
+					<div class="narrow-right">
+						<p>
+							In this lesson we will look in ways how to cancel the torque created by the rotor blade.
+							We will only cover anti torque system in the traditional single main rotor systems.
+						</p>
+					</div>
+				</div>
+				<div class="section">
+					<div class="section-left">
+						<h3>Theory</h3>
+					</div>
+					<div class="section-right">
+						<p>
+							There are 3 ways to cancel the torque:
+							<br/>
+							First is to have <b>tail rotor</b> on the tail boom countering the torque.
+							<br/>
+							Next is <b>ducted fan or Fenestron&reg;</b>, introduced by Airbus
+							<br/>
+							The last one <b>NOTAR</b> (NO TAil Rotor), this is the newest of all types incorporated into helicopters.
+							It works by having jet thrusts in the tail boom pushing in the opposite direction of the direction the rotor spins,
+							moving the jet nozzles on the tail boom you can control the direction of heading (yaw).
+							It also relies on the main rotor pushing air downword on the tail boom adding to the control of yaw.
+							<br/><br/>
+							Designs vary in cost, effectivnes and safety.
+							<br/>
+							Tail rotor system is the most effective, it's cost is lowest but it is not
+							safe, landing in populated areas like cities is not a good idea. While Fenestron is safe, it is expensive
+							to make and it is not as effective in cross winds as other systems.
+							As for NOTAR it represents a mix of all 3 parameters, bringing a new approach to tackling this problem.
+						</p>
+					</div>
+				</div>
+				<div class="section last-section">
+					<div class="section-left">
+						<h3>Conclusion</h3>
+					</div>
+					<div class="section-right">
+						<p>
+							Understanding what advantages and disadvatages in types of tail boom design and anti torque systems work
+							and influence helicopters.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="clear"></div>
+		<!-- Footer -->
+		<div id="footer-wrapper">
+			<div id="footer-top">
+				<ul>
+					<li class="main-column">
+						<ul class="sub-ul">
+							<li class="first-row">
+								<strong><b>Helicopters</b> (Civil)</strong>
+							</li>
+							<li>
+								<a href="ec120.html">EC120</a>
+							</li>
+							<li>
+								<a href="ec135.html">EC135</a>
+							</li>
+							<li>
+								<a href="as365.html">AS365</a>
+							</li>
+							<li>
+								<a href="b206.html">Bell206</a>
+							</li>
+						</ul>
+					</li>
+					<li class="main-column">
+						<ul class="sub-ul">
+							<li class="first-row">
+								<strong><b>Helicopters</b> (Military)</strong>
+							</li>
+							<li>
+								<a href="uh60.html">UH60</a>
+							</li>
+							<li>
+								<a href="ch53e.html">CH53e</a>
+							</li>
+							<li>
+								<a href="as565.html">AS565</a>
+							</li>
+							<li>
+								<a href="ah64.html">AH64</a>
+							</li>
+						</ul>
+					</li>
+					<li class="main-column">
+						<ul class="sub-ul">
+							<li class="first-row">
+								<strong>Manufacturers</strong>
+							</li>
+							<li>
+								<a href="bell.html">Bell</a>
+							</li>
+							<li>
+								<a href="airbus.html">Airbus</a>
+							</li>
+							<li>
+								<a href="sikorsky.html">Sikorsky</a>
+							</li>
+						</ul>
+					</li>
+					<li class="main-column">
+						<ul class="sub-ul">
+							<li class="first-row">
+								<strong>Lessons</strong>
+							</li>
+							<li>
+								<a href="auto.html">Autorotation</a>
+							</li>
+							<li>
+								<a href="rotorc.html">Rotor configuration</a>
+							</li>
+							<li>
+								<a href="antitorque.html">Anti-torque systems</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<div id="footer-bottom">
+				<ul class="main-ul">
+					<li class="column" >
+						<ul class="column-ul"> 
+							<li class="column-row followus-row">
+								<strong id="strongf1">Follow us on</strong>
+							</li>
+						</ul>
+					</li>
+					<li class="column">
+						<ul class="column-ul"> 
+							<li class="column-row">
+								<ul class="column-row-ul">
+									<li class="row-icon"> 
+										<img src="Images/transparent.png" id="facebook-icon" alt="facebook icon" />
+									</li>
+									<li class="row-text">
+										<a href="http://www.facebook.com" target="_blank">Facebook</a>
+									</li>
+								</ul>
+							</li>
+							<li class="column-row">
+								<ul class="column-row-ul">
+									<li class="row-icon">  
+										<img src="Images/transparent.png" id="twitter-icon" alt="twitter icon" />
+									</li>
+									<li class="row-text" > 
+										<a href="http://www.twitter.com" target="_blank">Twitter</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li class="column">
+						<ul class="column-ul"> 
+							<li class="column-row">
+								<ul class="column-row-ul">
+									<li class="row-icon"> 
+										<img src="Images/transparent.png" id="youtube-icon" alt="youtube icon" />
+									</li>
+									<li class="row-text">
+										<a href="http://www.youtube.com" target="_blank">Youtube</a>
+									</li>
+								</ul>
+							</li>
+							<li class="column-row">
+								<ul class="column-row-ul">
+									<li class="row-icon">  
+										<img src="Images/transparent.png" id="linkedin-icon" alt="linkedin icon" />
+									</li>
+									<li class="row-text"> 
+										<a href="http://www.linkedin.com" target="_blank">Linkedin</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li class="column">
+						<ul class="column-ul"> 
+							<li class="column-row">
+								<ul class="column-row-ul">
+									<li class="row-icon">  
+										<img src="Images/transparent.png" id="googleplus-icon" alt="google plus icon" />
+									</li>
+									<li class="row-text"> 
+										<a href="https://plus.google.com" target="_blank" >Google+</a>
+									</li>
+								</ul>
+							</li>
+							<li class="column-row">
+								<ul class="column-row-ul">
+									<li class="row-icon">  
+										<img src="Images/transparent.png" id="rss-icon" alt="rss icon" />
+									</li>
+									<li class="row-text"> 
+										<a href="rss.xml">RSS</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li class="column">
+						<ul class="website-column"> 
+							<li class="website-row">
+								<strong id="strongf2">Content</strong>
+							</li>
+							<li class="website-row">
+								<a href="documentation.pdf" target="_blank">Documentation</a>
+							</li>
+							<li class="website-row">
+								<a href="glossary_index.pdf" target="_blank">Glossary</a>
+							</li>
+							<li class="website-row">
+								<a href="sitemap.xml">Sitemap</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<p> 
+					&copy Helicopter science 2016 by <a href="author.html">UBJ</a>
+				</p>
+			</div>
+		</div>
+	</body>
+</html>

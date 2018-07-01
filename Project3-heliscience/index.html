@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Helicopters-physics &amp; aerodynamics</title>
+		<meta charset="UTF-8">
+		<meta name="description" content="helicopter science is a place for helicopter entusiasts and rookies, we analyze manufacturers,
+		their models and we give lessons to explain how these amazing machines work">
+		<meta name="keywords" content="civil helicopters, military helicopters, rotor, safety, turbomeca, collective, cyclic, variant, blades">
+		<meta name="author" content="Uroš Jovanović">
+		
+		<script type="text/javascript" src="jquery-1.9.0.js"></script>
+		<script type="text/javascript" src="header.js"></script>
+		<script type="text/javascript" src="slider.js"></script>
+		<script type="text/javascript" src="navigation.js"></script>
+		<script type="text/javascript" src="gallery.js"></script>
+		<script type="text/javascript" src="lightbox.min.js"></script>
+		
+		<link rel="shortcut icon" href="Images/Icon1.jpg">
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="stylesheet" type="text/css" href="lightbox.css">
+	</head>
+	<body>
+		<!-- Header -->
+		<div id="header-wrapper">
+			<div id="header">
+				<div id="header-logo">
+					<a href="index.html">
+						<img src="Images/original.png" id="logo" alt="heli science logo" />
+						<img src="Images/pcfinal.png" id="tlogo" alt="heli science tlogo" />
+					</a>
+				</div>
+				<div id="header-hd-wrapper">
+					<div id="hd-search">
+						<div id="search-form-wrapper">
+							<form action="search.html" method="GET" id="search-form" style="display: none;">
+								<input type="text" id="TBsearch" name="word" placeholder="Search for models, companies..." />
+								<input type="submit" id="BTNsubmit-search" value="SEARCH" />
+							</form>
+						</div>
+						<div id="search-spyglass">
+							<img src="Images/transparent.png" id="spyglass-img" alt="spyglass" class="cursor" />
+						</div>
+					</div>
+					<div id="hd-links">
+						<ul>
+							<li> 
+								<a href="#" id="a-login" class="xs-color xs-spacing" onclick="return false">Log in</a>
+							</li>
+							<li>
+								<a href="signup.html" class="xs-color xs-spacing">Sign up</a>
+							</li>
+							<li>
+								<a href="#" id="a-content" class="xs-nospacing" onclick="return false" >
+									<img src="Images/menu.png" id="triangle-img" alt="triangle" />
+								</a>
+							</li>
+						</ul>
+						<!-- Content dropdown -->
+						<div id="hd-content">
+							<img src="Images/rotmenu.png" alt="point" />
+							<div id="content">
+								<ul>
+									<li> <a href="documentation.pdf" target="_blank">Documentation</a> </li>
+									<li> <a href="glossary_index.pdf" target="_blank">Glossary</a> </li>
+									<li> <a href="sitemap.xml" target="_blank">Sitemap</a> </li>
+								</ul>
+							</div>
+						</div>
+						<!-- Log in dropdown -->
+						<div id="hd-login">
+							<img src="Images/rotmenu.png" alt="point" />
+							<div id="login">
+								<form id="form-login" action="" method="">
+									<table>
+										<tr>
+											<td> <strong>Email</strong> </td>
+										</tr>
+										<tr>
+											<td> <input type="text" id="TBloginemail" class="input" /> </td>
+										</tr>
+										<tr>
+											<td> <strong>Password</strong> </td>
+										</tr>
+										<tr>
+											<td> <input type="text" id="TBloginpass" class="input" /> </td>
+										</tr>
+										<tr>
+											<td> <input type="button" id="BTNsubmit-login" value="Log in" /> </td>
+										</tr>
+									</table>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Main -->
+		<div id="main-wrapper">
+			<!-- Slider -->
+			<div id="slider">
+				<div id="slider-images">
+					<img src="Images/LetterHeliJpg.jpg" alt="letter heli" />
+					<img src="Images/ec135.jpg" alt="h135" />
+					<img src="Images/strip.jpg" alt="mountain rescue" />
+					<!-- 
+						<span id="slider-buttons">
+							<input type="button" id="button-prev" />
+							<input type="button" id="button-next" />
+						</span>
+					-->
+				</div>
+			</div>
+			<!-- Navigation -->
+			<div id="navigation">
+				<div id="navigation-links">
+					<ul id="main-ul">
+						<li id="ddmodels">
+							<a href="#" id="a-ddmodels" onclick="return false">Models</a>
+						</li>
+						<li id="ddcompany" class="spacing">
+							<a href="#" id="a-ddcompany" onclick="return false">Company</a>
+							<ul id="company-ul">
+								<li> <a href="bell.html">Bell</a> </li>
+								<li> <a href="airbus.html">Airbus</a> </li>
+								<li> <a href="sikorsky.html">Sikorsky</a> </li>
+							</ul>
+						</li>
+						<li id="ddlessons">
+							<a href="#" id="a-ddlessons" onclick="return false">Lessons</a>
+							<ul id="lessons-ul">
+								<li> <a href="auto.html">Autorotation</a> </li>
+								<li> <a href="rotorc.html">Rotor configuration</a> </li>
+								<li> <a href="antitorque.html">Anti-torque systems</a> </li>
+							</ul>
+						</li>
+						<li class="spacing">
+							<a href="contact.html" id="a-contact">Contact</a>
+						</li>
+						<li>
+							<a href="author.html" id="a-author">Author</a>
+						</li>
+					</ul>
+				</div>
+				<div id="navigation-explore">
+					<a href="http://www.helis.com/stories/" target="_blank">
+						<img src="Images/transparent.png" id="explore-arrow" alt="arrow" />
+						<strong id="strong1">Explore great</strong>
+						<strong id="strong2">helicopter stories</strong>
+					</a>
+				</div>
+				<!-- Models dropdown -->
+				<div id="models">
+					<ul id="models-ul">
+						<li id="models-li1"><strong id="strongc">Civil</strong></li>
+						<li id="models-li2"><strong id="strongm">Military</strong></li>
+					</ul>
+					<div id="models-civil" class="models-both">
+						<div class="models-img">
+							<img src="Images/ec120crop.jpg" alt="ec120 model" />
+						</div>
+						<div class="models-links">
+							<ul>
+								<li> <a href="ec120.html">EC120</a> </li>
+								<li> <a href="ec135.html">EC135</a> </li>
+							</ul>
+							<ul>
+								<li> <a href="as365.html">AS365</a> </li>
+								<li> <a href="b206.html">Bell206</a> </li>
+							</ul>
+						</div>
+					</div>
+					<div id="models-military" class="models-both" style="display: none;">
+						<div class="models-img">
+							<img src="Images/apachecrop.png" alt="ah64 model" />
+						</div>
+						<div class="models-links">
+							<ul>
+								<li> <a href="uh60.html">UH60</a> </li>
+								<li> <a href="ch53e.html">CH53e</a> </li>
+							</ul>
+							<ul>
+								<li> <a href="as565.html">AS565</a> </li>
+								<li> <a href="ah64.html">AH64</a> </li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Main content -->
+			<div id="main-content-wrapper">
+				<div id="welcome">
+					<div id="welcome-left">
+						<h1>Helicopter science</h1>
+						<h2>Your helicopter handbook</h2>
+					</div>
+					<div id="welcome-right">
+						<p>
+							Welcome! Our goal is to spread the knowledge of helicopters and everything related to them.
+							You can find most popular helicopter models, civil and military.
+							We also provide lessons, explaining how these magnificent aircraft work.
+						</p>
+					</div>
+				</div>
+				<div id="rows-wrapper">
+					<div class="row">
+						<div class="article-wrapper article-wrapper-spacing">
+							<div class="article-small article-small-spacing zooming">
+								<a href="news.html#safety">
+									<div class="wrp-img">
+										<img class="image-filter zoom" src="Images/safety.jpg" alt="Landing signal" />
+									</div>
+									<div class="wrp-text">
+										<h3>Safety first</h3>
+										<p>
+											Flight safety on top priority! Read about these rules and regulations,
+											FAA reminds on importance of respecting procedures
+										</p>
+										<a href="news.html#safety" class="button-small">Read more</a>
+									</div>
+								</a>
+							</div>
+							<div class="article-small zooming">
+								<a href="news.html#job">
+									<div class="wrp-img">
+										<img class="image-filter zoom" src="Images/work.jpg" alt="at work" />
+									</div>
+									<div class="wrp-text">
+										<h3>Jobs</h3>
+										<p>Did you ever wonder, what's it like working for mayor aircraft manufacturing companies?</p>
+										<a href="news.html#job" class="button-small">Read more</a>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="article-wrapper">
+							<div class="article-medium">
+								<div class="medium-left">
+									<a href="news.html#h">
+										<h3>H series</h3>
+										<p>
+											Airbus renames the EC series to H. This comes two years after Airbus bought the former
+											French giant Eurocopter
+										</p>
+									</a>
+									<a href="news.html#h" class="button-medium">Read the story</a>
+								</div>
+								<div class="medium-right">
+									<a href="news.html#h">
+										<img src="Images/h.jpg" class="image-filter" alt="h is for love" />
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="article-wrapper article-wrapper-spacing">
+							<div class="article-wide zooming">
+								<a href="news.html#teamwork">
+									<div class="wrp-img-wide">
+										<img src="Images/yey.jpg" class="image-filter zoom" alt="team work" />
+									</div>
+									<div class="wrp-text-wide">
+										<h3>Team work</h3>
+										<p>
+											Being a helicopter is stressful and often dangerous.
+											That's why having a patient and experienced crew is always important
+										</p>
+										<a href="news.html#teamwork" class="button-wide">Read the story</a>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="article-wrapper">
+							<div class="article-small article-small-spacing zooming">
+								<a href="news.html#hover">
+									<div class="wrp-img">
+										<img class="image-filter zoom" src="Images/hover.jpg" alt="sea rescue" />
+									</div>
+									<div class="wrp-text">
+										<h3>Sea rescue</h3>
+										<p>Difficult and dangerous, working hard to save lives on coastal and maritime missions</p>
+										<a href="news.html#hover" class="button-small">Read more</a>
+									</div>
+								</a>
+							</div>
+							<div class="article-small zooming">
+								<a href="news.html#chinook">
+									<div class="wrp-img">
+										<img class="image-filter zoom" src="Images/chinook.jpg" alt="chinook helicopter" />
+									</div>
+									<div class="wrp-text">
+										<h3>Chinook</h3>
+										<p>CH-47 is capable of deploying trops and equipment without landing</p>
+										<a href="news.html#chinook" class="button-small">Read more</a>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Gallery -->
+			<div id="strip-wrapper">
+				<div id="strip">
+					<div id="move-prev">
+						<img src="Images/arrowleft.png" alt="prev img" />
+					</div>
+					<div id="move-next">
+						<img src="Images/arrowright.png" alt="next img" />
+					</div>
+					<strong>Gallery</strong>
+					<div id="images-wrapper" style="left:0px;">
+						<a href="Images/gal1.jpg" data-lightbox="log-centar">
+							<img src="Images/gal1.jpg" alt="as365 heli" />
+						</a>
+						<a href="Images/gal2.jpg" data-lightbox="log-centar">
+							<img src="Images/gal2.jpg" alt="ec120 heli" />
+						</a>
+						<a href="Images/gal3.jpg" data-lightbox="log-centar">
+							<img src="Images/gal3.jpg" alt="medvac" />
+						</a>
+						<a href="Images/uh60web.png" data-lightbox="log-centar">
+							<img src="Images/uh60web.png" alt="black hawk" />
+						</a>
+						<a href="Images/gal5.jpg" data-lightbox="log-centar">	
+							<img src="Images/gal5.jpg" alt="x3" />
+						</a>
+						<a href="Images/gal6.jpg" data-lightbox="log-centar">
+							<img src="Images/gal6.jpg" alt="night time" />
+						</a>
+						<a href="Images/gal7.jpg" data-lightbox="log-centar">
+							<img src="Images/gal7.jpg" alt="agusta westland" />
+						</a>
+						<a href="Images/gal8.jpg" data-lightbox="log-centar">
+							<img src="Images/gal8.jpg" alt="coast guard" />
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Footer -->
+		<div id="footer-wrapper">
+			<div id="footer-top">
+				<ul>
+					<li class="main-column">
+						<ul class="sub-ul">
+							<li class="first-row">
+								<strong><b>Helicopters</b> (Civil)</strong>
+							</li>
+							<li>
+								<a href="ec120.html">EC120</a>
+							</li>
+							<li>
+								<a href="ec135.html">EC135</a>
+							</li>
+							<li>
+								<a href="as365.html">AS365</a>
+							</li>
+							<li>
+								<a href="b206.html">Bell206</a>
+							</li>
+						</ul>
+					</li>
+					<li class="main-column">
+						<ul class="sub-ul">
+							<li class="first-row">
+								<strong><b>Helicopters</b> (Military)</strong>
+							</li>
+							<li>
+								<a href="uh60.html">UH60</a>
+							</li>
+							<li>
+								<a href="ch53e.html">CH53e</a>
+							</li>
+							<li>
+								<a href="as565.html">AS565</a>
+							</li>
+							<li>
+								<a href="ah64.html">AH64</a>
+							</li>
+						</ul>
+					</li>
+					<li class="main-column">
+						<ul class="sub-ul">
+							<li class="first-row">
+								<strong>Manufacturers</strong>
+							</li>
+							<li>
+								<a href="bell.html">Bell</a>
+							</li>
+							<li>
+								<a href="airbus.html">Airbus</a>
+							</li>
+							<li>
+								<a href="sikorsky.html">Sikorsky</a>
+							</li>
+						</ul>
+					</li>
+					<li class="main-column">
+						<ul class="sub-ul">
+							<li class="first-row">
+								<strong>Lessons</strong>
+							</li>
+							<li>
+								<a href="auto.html">Autorotation</a>
+							</li>
+							<li>
+								<a href="rotorc.html">Rotor configuration</a>
+							</li>
+							<li>
+								<a href="antitorque.html">Anti-torque systems</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<div id="footer-bottom">
+				<ul class="main-ul">
+					<li class="column">
+						<ul class="column-ul"> 
+							<li class="column-row followus-row">
+								<strong id="strongf1">Follow us on</strong>
+							</li>
+						</ul>
+					</li>
+					<li class="column">
+						<ul class="column-ul"> 
+							<li class="column-row">
+								<ul class="column-row-ul">
+									<li class="row-icon"> 
+										<img src="Images/transparent.png" id="facebook-icon" alt="facebook icon" />
+									</li>
+									<li class="row-text">
+										<a href="http://www.facebook.com" target="_blank">Facebook</a>
+									</li>
+								</ul>
+							</li>
+							<li class="column-row">
+								<ul class="column-row-ul">
+									<li class="row-icon">  
+										<img src="Images/transparent.png" id="twitter-icon" alt="twitter icon" />
+									</li>
+									<li class="row-text" > 
+										<a href="http://www.twitter.com" target="_blank">Twitter</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li class="column">
+						<ul class="column-ul"> 
+							<li class="column-row">
+								<ul class="column-row-ul">
+									<li class="row-icon"> 
+										<img src="Images/transparent.png" id="youtube-icon" alt="youtube icon" />
+									</li>
+									<li class="row-text">
+										<a href="http://www.youtube.com" target="_blank">Youtube</a>
+									</li>
+								</ul>
+							</li>
+							<li class="column-row">
+								<ul class="column-row-ul">
+									<li class="row-icon">  
+										<img src="Images/transparent.png" id="linkedin-icon" alt="linkedin icon" />
+									</li>
+									<li class="row-text"> 
+										<a href="http://www.linkedin.com" target="_blank">Linkedin</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li class="column">
+						<ul class="column-ul">
+							<li class="column-row">
+								<ul class="column-row-ul">
+									<li class="row-icon">  
+										<img src="Images/transparent.png" id="googleplus-icon" alt="google plus icon" />
+									</li>
+									<li class="row-text"> 
+										<a href="https://plus.google.com" target="_blank" >Google+</a>
+									</li>
+								</ul>
+							</li>
+							<li class="column-row">
+								<ul class="column-row-ul">
+									<li class="row-icon">  
+										<img src="Images/transparent.png" id="rss-icon" alt="rss icon" />
+									</li>
+									<li class="row-text"> 
+										<a href="rss.xml">RSS</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li class="column">
+						<ul class="website-column"> 
+							<li class="website-row">
+								<strong id="strongf2">Content</strong>
+							</li>
+							<li class="website-row">
+								<a href="documentation.pdf" target="_blank">Documentation</a>
+							</li>
+							<li class="website-row">
+								<a href="glossary_index.pdf" target="_blank">Glossary</a>
+							</li>
+							<li class="website-row">
+								<a href="sitemap.xml">Sitemap</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<p> 
+					&copy Helicopter science 2016 by <a href="author.html">UBJ</a>
+				</p>
+			</div>
+		</div>
+	</body>
+</html>
