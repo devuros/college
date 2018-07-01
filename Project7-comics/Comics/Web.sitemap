@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode url="~/Default.aspx" title="Home">
+    <siteMapNode url="#" title="Products">
+      <siteMapNode url="Category.aspx?idCategory=2" title="Comics" />
+      <siteMapNode url="Category.aspx?idCategory=5" title="Books" />
+      <siteMapNode url="Category.aspx?idCategory=6" title="Series" />
+      <siteMapNode url="Category.aspx?idCategory=8" title="Wallpapers" />
+    </siteMapNode>
+    <siteMapNode url="~/Gallery.aspx" title="Gallery" />
+    <siteMapNode url="~/Contact.aspx" title="Contact" />
+    <siteMapNode url="~/Author.aspx" title="Author" />
+    <siteMapNode url="" title="Panel" roles="Administrator">
+      <siteMapNode url="~/Panel/PanelGallery.aspx" title="Panel gallery" roles="Administrator" />
+      <siteMapNode url="~/Panel/PanelImage.aspx" title="Panel image" roles="Administrator" />
+      <siteMapNode url="~/Panel/PanelCart.aspx" title="Panel cart" roles="Administrator" />
+      <siteMapNode url="~/Panel/PanelUser.aspx" title="Panel user" roles="Administrator" />
+      <siteMapNode url="~/Panel/PanelProduct.aspx" title="Panel product" roles="Administrator" />
+    </siteMapNode>
+  </siteMapNode>
+</siteMap>

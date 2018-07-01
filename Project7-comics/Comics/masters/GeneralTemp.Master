@@ -1,0 +1,89 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MainTemp.master.cs" Inherits="Comics.MainTemp" %>
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head runat="server">
+        <title></title>
+
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+        <meta name="author" content="Uroš Jovanović" />
+        <meta name="keywords" content="comics, books, wallpapers, series, hero, marvel, dc comics" />
+        <meta name="description" content="Welcome dear visitor, come rest enjoy our marvelous collection of comics, books, series and wallpapers" />
+        
+        <link rel="shortcut icon" href="../assets/images/prava.ico" />
+        <link href="../assets/css/style.css" rel="stylesheet" />
+        <link href="../assets/font-awesome-4.5.0/css/font-awesome.css" rel="stylesheet" />
+        
+        <script src="../assets/script/jquery-1.9.0.js"></script>
+        <script src="../assets/script/jquery.js"></script>
+
+        <%-- Cph: Head --%>
+        <asp:ContentPlaceHolder ID="cphHead" runat="server"></asp:ContentPlaceHolder>
+    </head>
+    <body>
+        <form runat="server" id="formBody">
+            <header>
+			    <div id="header">
+	                <div id="header-logo">
+                        <asp:HyperLink ID="hlHome" runat="server" NavigateUrl="~/Default.aspx">
+                            <h1 id="logo">NwS <i class="fa fa-laptop"></i></h1>
+                        </asp:HyperLink>
+	                </div>
+	                <nav>
+                        <asp:Menu ID="menuNav" runat="server" Orientation="Horizontal" CssClass="nav-wrapper"
+                            RenderingMode="List" StaticDisplayLevels="2" DataSourceID="SiteMapDataSourceNav"
+                            StaticEnableDefaultPopOutImage="false">
+                        </asp:Menu>
+                        <asp:SiteMapDataSource ID="SiteMapDataSourceNav" runat="server" />
+	                </nav>
+	                <div id="header-login">
+                        <%-- Cph: Login --%>
+                        <asp:ContentPlaceHolder ID="cphLogin" runat="server"></asp:ContentPlaceHolder>
+                        <div class='login-link'>
+                            <asp:LoginStatus ID="LoginStatus1" runat="server" LoginText="Login" LogoutText="Logout" />
+                        </div>
+	                </div>
+                </div>
+		    </header>
+            <main>
+                <%-- Cph: Main --%>
+                <asp:ContentPlaceHolder ID="cphMain" runat="server"></asp:ContentPlaceHolder>
+		    </main>
+		    <footer>
+			    <div id="footer">
+	                <div class="column">
+		                <ul>
+			                <li class="ul-title"><a href="#">Products</a></li>
+			                <li><a href="Category.aspx?idCategory=2" title="comics">Comics</a></li>
+			                <li><a href="Category.aspx?idCategory=5" title="books">Books</a></li>
+			                <li><a href="Category.aspx?idCategory=6" title="series">Series</a></li>
+			                <li><a href="Category.aspx?idCategory=8" title="wallpapers">Wallpapers</a></li>
+		                </ul>
+	                </div>
+	                <div class="column">
+		                <ul>
+			                <li class="ul-title"><a href="#">Other</a></li>
+			                <li><a href="Gallery.aspx" title="gallery">Gallery</a></li>
+			                <li><a href="Contact.aspx" title="contact us">Contact</a></li>
+			                <li><a href="Author.aspx" title="author">Author</a></li>
+		                </ul>
+	                </div>
+	                <div class="column">
+		                <ul>
+			                <li class="ul-title"><a href="#"></a></li>
+			                <li><a href="#" title="documentation"></a></li>
+			                <li><a href="#" title="sitemap"></a></li>
+		                </ul>
+	                </div>
+	                <div id="power">
+		                <strong style="vertical-align: top;">Powered by</strong>
+		                <img src="assets/images/php.png" alt="php logo" id="php" />
+		                <img src="assets/images/mysql.png" alt="mysql logo" id="mysql" />
+		                <img src="assets/images/npp.png" alt="notepade++ logo" id="npp" />
+	                </div>
+	                <div id="copy">&copy; 2017. <strong>\\</strong> Uroš Jovanović</div>
+                </div>
+		    </footer>
+        </form>
+    </body>
+</html>

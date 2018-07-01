@@ -1,0 +1,31 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MainTemp.master.cs" Inherits="Comics.MainTemp" %>
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head runat="server">
+        <title></title>
+
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+        <meta name="author" content="Uroš Jovanović" />
+        <meta name="keywords" content="comics, books, wallpapers, series, hero, marvel, dc comics" />
+        <meta name="description" content="Welcome dear visitor, come rest enjoy our marvelous collection of comics, books, series and wallpapers" />
+        
+        <link rel="shortcut icon" href="../assets/images/prava.ico" />
+        <link href="../assets/css/style.css" rel="stylesheet" />
+        <link href="../assets/font-awesome-4.5.0/css/font-awesome.css" rel="stylesheet" />
+        
+        <script src="../assets/script/jquery-1.9.0.js"></script>
+        <script src="../assets/script/jquery.js"></script>
+
+        <%-- Cph: Head --%>
+        <asp:ContentPlaceHolder ID="cphHead" runat="server"></asp:ContentPlaceHolder>
+    </head>
+    <body>
+        <form runat="server" id="formBody">
+            <main>
+                <%-- Cph: Main --%>
+                <asp:ContentPlaceHolder ID="cphMain" runat="server"></asp:ContentPlaceHolder>
+		    </main>
+        </form>
+    </body>
+</html>

@@ -1,0 +1,329 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3B521AC3-1D78-4241-8B1C-A1AAB587C80C}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Comics</RootNamespace>
+    <AssemblyName>Comics</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Data\aspAuditorne.mdf" />
+    <Content Include="App_Data\aspAuditorne_log.ldf">
+      <DependentUpon>aspAuditorne.mdf</DependentUpon>
+    </Content>
+    <Content Include="App_Data\comics_db_log.ldf">
+      <DependentUpon>comics_db.mdf</DependentUpon>
+    </Content>
+    <Content Include="assets\images\archer.jpg" />
+    <Content Include="assets\images\autor.png" />
+    <Content Include="assets\images\book.jpg" />
+    <Content Include="assets\images\comic.jpg" />
+    <Content Include="assets\images\daredevil.jpg" />
+    <Content Include="assets\images\don.jpg" />
+    <Content Include="assets\images\dthero.jpg" />
+    <Content Include="assets\images\girl.jpg" />
+    <Content Include="assets\images\hulk.jpg" />
+    <Content Include="assets\images\ironman.jpg" />
+    <Content Include="assets\images\mysql.png" />
+    <Content Include="assets\images\npp.png" />
+    <Content Include="assets\images\php.png" />
+    <Content Include="assets\images\scale.jpg" />
+    <Content Include="assets\images\search.jpg" />
+    <Content Include="assets\images\series.jpg" />
+    <Content Include="App_Data\comics_db.mdf" />
+    <Content Include="assets\images\simpsons.jpg" />
+    <Content Include="assets\images\superman.jpg" />
+    <Content Include="assets\images\ulysses.jpg" />
+    <Content Include="assets\images\vice.jpg" />
+    <Content Include="assets\images\wolverine.jpg" />
+    <Content Include="Author.aspx" />
+    <Content Include="Cart.aspx" />
+    <Content Include="Category.aspx" />
+    <Content Include="Contact.aspx" />
+    <Content Include="Default.aspx" />
+    <Content Include="Gallery.aspx" />
+    <Content Include="Login.aspx" />
+    <Content Include="masters\MainTemp.Master" />
+    <Content Include="assets\font-awesome-4.5.0\fonts\fontawesome-webfont.eot" />
+    <Content Include="assets\font-awesome-4.5.0\fonts\fontawesome-webfont.ttf" />
+    <Content Include="assets\font-awesome-4.5.0\fonts\fontawesome-webfont.woff" />
+    <Content Include="assets\font-awesome-4.5.0\fonts\fontawesome-webfont.woff2" />
+    <Content Include="assets\font-awesome-4.5.0\fonts\FontAwesome.otf" />
+    <Content Include="assets\font-awesome-4.5.0\less\animated.less" />
+    <Content Include="assets\font-awesome-4.5.0\less\bordered-pulled.less" />
+    <Content Include="assets\font-awesome-4.5.0\less\core.less" />
+    <Content Include="assets\font-awesome-4.5.0\less\fixed-width.less" />
+    <Content Include="assets\font-awesome-4.5.0\less\font-awesome.less" />
+    <Content Include="assets\font-awesome-4.5.0\less\icons.less" />
+    <Content Include="assets\font-awesome-4.5.0\less\larger.less" />
+    <Content Include="assets\font-awesome-4.5.0\less\list.less" />
+    <Content Include="assets\font-awesome-4.5.0\less\mixins.less" />
+    <Content Include="assets\font-awesome-4.5.0\less\path.less" />
+    <Content Include="assets\font-awesome-4.5.0\less\rotated-flipped.less" />
+    <Content Include="assets\font-awesome-4.5.0\less\stacked.less" />
+    <Content Include="assets\font-awesome-4.5.0\less\variables.less" />
+    <Content Include="assets\font-awesome-4.5.0\scss\font-awesome.scss" />
+    <Content Include="assets\font-awesome-4.5.0\scss\_animated.scss" />
+    <Content Include="assets\font-awesome-4.5.0\scss\_bordered-pulled.scss" />
+    <Content Include="assets\font-awesome-4.5.0\scss\_core.scss" />
+    <Content Include="assets\font-awesome-4.5.0\scss\_fixed-width.scss" />
+    <Content Include="assets\font-awesome-4.5.0\scss\_icons.scss" />
+    <Content Include="assets\font-awesome-4.5.0\scss\_larger.scss" />
+    <Content Include="assets\font-awesome-4.5.0\scss\_list.scss" />
+    <Content Include="assets\font-awesome-4.5.0\scss\_mixins.scss" />
+    <Content Include="assets\font-awesome-4.5.0\scss\_path.scss" />
+    <Content Include="assets\font-awesome-4.5.0\scss\_rotated-flipped.scss" />
+    <Content Include="assets\font-awesome-4.5.0\scss\_stacked.scss" />
+    <Content Include="assets\font-awesome-4.5.0\scss\_variables.scss" />
+    <Content Include="assets\script\jquery-3.0.0.min.map" />
+    <Content Include="masters\AuthTemp.Master" />
+    <Content Include="masters\GeneralTemp.Master" />
+    <Content Include="Panel\PanelCart.aspx" />
+    <Content Include="Panel\PanelImage.aspx" />
+    <Content Include="Panel\PanelProduct.aspx" />
+    <Content Include="Panel\PanelUser.aspx" />
+    <Content Include="Panel\Web.config" />
+    <Content Include="masters\PanelTemp.Master" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <Content Include="Panel\PanelGallery.aspx" />
+    <Content Include="Profile.aspx" />
+    <Content Include="Register.aspx" />
+    <Content Include="RemoteRequest.asmx" />
+    <Content Include="Web.sitemap" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="assets\css\style.css" />
+    <Content Include="assets\font-awesome-4.5.0\css\font-awesome.css" />
+    <Content Include="assets\font-awesome-4.5.0\css\font-awesome.min.css" />
+    <Content Include="assets\font-awesome-4.5.0\fonts\fontawesome-webfont.svg" />
+    <Content Include="assets\images\prava.ico" />
+    <Content Include="assets\script\jquery-1.9.0.js" />
+    <Content Include="assets\script\jquery-3.0.0.js" />
+    <Content Include="assets\script\jquery.js" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Author.aspx.cs">
+      <DependentUpon>Author.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Author.aspx.designer.cs">
+      <DependentUpon>Author.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Cart.aspx.cs">
+      <DependentUpon>Cart.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Cart.aspx.designer.cs">
+      <DependentUpon>Cart.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Category.aspx.cs">
+      <DependentUpon>Category.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Category.aspx.designer.cs">
+      <DependentUpon>Category.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contact.aspx.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contact.aspx.designer.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Gallery.aspx.cs">
+      <DependentUpon>Gallery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Gallery.aspx.designer.cs">
+      <DependentUpon>Gallery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="masters\AuthTemp.Master.cs">
+      <DependentUpon>AuthTemp.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="masters\AuthTemp.Master.designer.cs">
+      <DependentUpon>AuthTemp.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="masters\GeneralTemp.Master.cs">
+      <DependentUpon>GeneralTemp.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="masters\GeneralTemp.Master.designer.cs">
+      <DependentUpon>GeneralTemp.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="masters\MainTemp.Master.cs">
+      <DependentUpon>MainTemp.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="masters\MainTemp.Master.designer.cs">
+      <DependentUpon>MainTemp.Master</DependentUpon>
+    </Compile>
+    <Compile Include="masters\PanelTemp.Master.cs">
+      <DependentUpon>PanelTemp.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="masters\PanelTemp.Master.designer.cs">
+      <DependentUpon>PanelTemp.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Panel\PanelCart.aspx.cs">
+      <DependentUpon>PanelCart.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panel\PanelCart.aspx.designer.cs">
+      <DependentUpon>PanelCart.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Panel\PanelGallery.aspx.cs">
+      <DependentUpon>PanelGallery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panel\PanelGallery.aspx.designer.cs">
+      <DependentUpon>PanelGallery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Panel\PanelImage.aspx.cs">
+      <DependentUpon>PanelImage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panel\PanelImage.aspx.designer.cs">
+      <DependentUpon>PanelImage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Panel\PanelProduct.aspx.cs">
+      <DependentUpon>PanelProduct.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panel\PanelProduct.aspx.designer.cs">
+      <DependentUpon>PanelProduct.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Panel\PanelUser.aspx.cs">
+      <DependentUpon>PanelUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panel\PanelUser.aspx.designer.cs">
+      <DependentUpon>PanelUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Profile.aspx.cs">
+      <DependentUpon>Profile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Profile.aspx.designer.cs">
+      <DependentUpon>Profile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RemoteRequest.asmx.cs">
+      <DependentUpon>RemoteRequest.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="assets\images\thumb\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>57294</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:57294/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

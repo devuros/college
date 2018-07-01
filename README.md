@@ -7,3 +7,5 @@
 4. ddcomics
 5. forumz
 6. plantae
+## Section three:
+7. comics
