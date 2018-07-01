@@ -1,0 +1,105 @@
+*{margin: 0px; padding: 0px; }
+body { background-color: #080000; color: #FFF; }
+a:visited,a:active,a:link { text-decoration: none; color: #FFF; }
+
+#wrapper { width: 1000px; margin: 0 auto; }
+	#header { width: 1000px; height:200px; }
+		#header-top { float: right; width: 1000px; }
+			#header-top ul{ list-style-type: none; }
+			#header-top li{ height: 30px; width: 110px; float: right; 
+			text-align: center; padding-top: 10px; border: 1px solid #fff; background-color: #0F0F0F;  }
+		
+		#header-mid { height: 120px; float: left; width: 1000px; }
+			h1 { font-size: 45px; padding: 20px 20px 0px 20px; margin-top: 20px; }
+			h4 { font-size: 17px; padding-left: 22px; }	
+		#header-bot { height: 40px; float: left; width: 1000px; }
+			#header-bot a { color: #FFD700; }
+			#links ul {  list-style-type: none; float: left;  }
+			#links li { text-align: center; float: left; width: 120px; height: 28px;  
+			border: 1px solid #fff; padding-top: 10px; background-color: #140A00 ; }
+			#links { float: left; }
+			
+			#search { width: 300px; float: right; height: 40px; }
+				#tbPretraga { float: left; height: 20px; margin: 8px 5px 5px 5px; width: 200px; }
+				#Sbutton{ float: right; height: 20px; margin: 8px 5px 5px 5px; width: 60px; }
+	#main { width: 1000px; }
+		#main-top { width: 1000px; height: 300px; margin-top: 8px; }
+			#slide { width: 605px; height: 300px; 
+			border: 1px #FFF solid; float: left; border-radius: 25px;  }
+			#slide-side { width: 380px; height: 300px; border: 1px #FFF solid; 
+			float: right; margin-right: 0px; background-color: #291400; }
+			#gothic  { margin-top: 20px; margin-left: 22px; }
+			#slide-side hr { width: 330px; margin-left: 22px; }
+			#rss { margin-left: 30px;}
+			.logo { margin-top: 10px; margin-left: 10px;}
+			
+		#main-reg { height: 520px; width: 605px; border: 1px solid #FFF; float: left;  background-color: #331A00; margin-top: 5px; }
+			#main-reg  form { margin-top: 50px; }
+			.button { width: 10em;  height: 2em;}
+		#main-prica { height: 520px; width: 605px; border: 1px solid #FFF; float: left; background-color: #331A00; margin-top: 5px; }
+			#main-prica  p{ text-indent: 25px; margin: 20px 20px 0px 20px; font-family: "Arial" ; 
+			color: #ffb100;}
+		#main-autor {  height: 520px; width: 605px; border: 1px solid #FFF; float: left; background-color: #331A00; margin-top: 5px; }	
+			#main-autor img{ margin: 30px 10px 30px 80px; }
+			#main-autor p ,h3{ margin: 10px 10px 0px 60px; }
+			
+		#main-vodic { height: 520px; width: 605px; border: 1px solid #FFF; float: left; background-color: #331A00; margin-top: 5px; }
+			#main-vodic p { margin: 20px 10px 0px 20px; font-family: "Arial" ; 
+			color: #ffb100; }
+		#main-novosti { height: 520px; width: 605px; border: 1px solid #FFF; float: left; background-color: #331A00;margin-top: 5px; }	
+			#main-novosti p{ font-family: "Arial" ; color: #ffb100; float: right;
+			margin: 50px 40px 0px 10px; width: 200px; }
+			#main-novosti img { float:left; margin-top: 10px; margin-left: 10px; }
+			#ul{ margin: 270px 0px 5px 60px;  }
+		
+		
+		#main-side { height: 520px; width: 380px; float: right; margin-right: 0px; border: 1px solid #FFF; 
+			background-color: #1F140A;}
+			#main-side img { margin: 20px 0px 0px 60px; border: 1px solid #A37519; }
+			#main-side ul{ list-style-type:none; margin-top: 20px; }
+			#main-side h4 { text-align: center; margin-top: 10px; }
+			#main-side li { text-align: center; }
+			#main-side hr { width: 170px; margin-left: 110px; border: none; height: 1px; background-color: #ffb100; }
+			
+	#footer { width: 1000px; height: 100px; border: 1px solid #FFF; float: left; 
+			background-color: #000;}
+		#footer-left { width: 600px; height: 100px; float: left; }
+			#footer-left  a { margin-left: 60px; margin-right: 30px; margin-top: 12px; 
+							display: inline-block;}
+			#footer-left p { margin-top: 45px; text-align: center;}
+		#footer-right { width: 400px; height: 100px; float: left; }
+			#footer-right  ul{ list-style-type: none; }
+			#footer-right li { margin-left: 50px; margin-top: 12px; text-align: center; 
+							margin-right: 30px;}
+			
+			
+			
+/* Slide slike */
+
+	#slide-slike { width: 605px; height: 305px; }
+	#slide-slike img { position: absolute; width: 605px; height:300px ; border-radius: 25px;  }
+	#slide-slike { width: 180px; height: 200px; overflow: hidden; }
+	
+/* Dropdown meni */
+	
+	#links li ul { position: absolute; left: -999em; width: 122px; background: #000;
+		margin-top: 10px; z-index: 10; }
+	#links li ul li:hover{ width: 122px; }
+	#links li ul a { background-image: none; }
+	#links li:hover ul, # li ul:hover { left:auto; }
+	
+	#header-top li ul { position: absolute; left: -999em; width: 110px; background: #000;
+		margin-top: 10px; z-index: 10; }
+	#header-top li ul li:hover{ width: 110px; }
+	#header-top li ul a { background-image: none; }
+	#header-top li:hover ul, #header-top li ul:hover { left:auto; }
+
+/* Prijava */
+	
+	#login-omot { width: 100%; height: 40px; position: fixed; top: 0;left: -390px; z-index: 1000; }
+	#login { width: 500px; height: 20px; margin: 0px auto; padding: 10px; background-color: #330000; }
+	#login input[type=text]{ width: 170px; margin-right: 5px; padding: 1px; }
+	#login input[type=password] { width:140px; margin-right: 10px; padding: 1px; }
+	#login input[type=submit] { width: 50px; padding: 1px; } 
+	
+	

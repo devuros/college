@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Gothic 3 </title>
+		<link rel= "stylesheet" type= "text/css" href="style.css" />
+		
+		<meta http-equiv= "Content-Type" content= "text/html; charset= utf-8" />
+		<meta name="description" content="Gotik 3 je prica o bezimenom heroju koji spasava svet od invazije
+		oraka i uz svoje prijatleje Gorna, Diega, Lesterna spasice ljude od tiranije vladajucih i uticaja bogova">
+		<meta name="author" content="Uroš Jovanović" />
+		<meta name="keywords" content="Gothic 3, heroj, inos, adanos,beliar,noc gavrana, gorn,diego,lester,
+		pobunjenici,mirtana,nordmar,varant" />
+		<meta name="robots" content="index, follow" />
+		<link rel="shortcut icon" href="slike/Iconica.ico" />
+
+		<script src="slike/jquery-1.4.min.js" type="text/javascript"></script>
+		<script src="slider.js" type="text/javascript"></script>
+		<script src="dropdown.js" type="text/javascript"></script>
+		<script src="prijava.js" type="text/javascript"></script>
+		<script src="pretraga.js" type="text/javascript"></script>
+	</head>
+	<body>
+		<div id="wrapper">
+			<div id="header">
+				<div id="header-top">
+					<ul>
+						<li> <a href="javascript:prijava()" > Prijava </a> </li>
+						<li> <a href="registracija.html"> Registracija </a> </li>
+						<li> 
+							<a href="" > Istraži </a> 
+								<ul>
+									<li>
+										<a href="sitemap.xml"> Sitemap </a>
+									</li>
+									<li> 
+										<a href="dokumentacija.pdf" target="_blank" > Dokumentacija </a>
+									</li>
+									<li>
+										<a href="autor.html"> Autor </a>
+									</li>
+								</ul>
+						</li>
+					</ul>
+				</div>
+				<div id="header-mid">
+					<h1> Gothic 3 </h1> 
+					<h4> JoWooD productions </h4>
+				</div>
+				<div id="header-bot">
+					<div id="links">
+						<ul>
+							<li> <a href="index.html"> Početna </a> </li>
+							<li> <a href="prica.html"> Priča </a> </li>
+							<li> <a href="vodic.html"> Vodič </a> </li>
+							<li> <a href="novosti.html"> Novosti </a> </li>
+							<li> 
+								<a href=""> Pomoć </a>
+								<ul>
+									<li> 
+										<a href="http://forum.nordicgames.at/forums/254-Gothic-3"> 
+										Forum 
+										</a> 
+									</li>
+									<li>
+										<a href="http://guides.gamepressure.com/gothic3/" > 
+										Vodič kroz igru 
+										</a> 
+									</li>
+									<li>
+										<a href="http://www.cheatcc.com/pc/gothic3cheatscodes.html">
+										Šifre
+										</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+					<div id="search">
+						<form action="#" method="get" name="forma"  >
+							<input type="text" id="tbPretraga" placeholder="Pretrazi.." />
+							<input type="button" id="Sbutton" value="Pretrazi" onclick="pretraga();" />
+						</form>
+					</div>
+				</div>
+			</div>
+			<div id="main">
+				<div id="main-top">
+					<div id="slide">
+						<div id="slide-slike">
+							<img alt="Main" src="slike/Main.jpg" />
+							<img alt="Nordmar" src="slike/Nordmar.jpg" />
+							<img alt="Oasis" src="slike/Oasis.jpg" />
+						</div>
+					</div>
+					<div id="slide-side">
+						<img src="slike/Gothic.jpg" alt="Main Picture" 
+						height="200px" width="330px" border="1px solid #FFF" id="gothic" />
+						<h4> Ostanite u vezi </h4> 
+						<hr />
+						<a href="rss.xml">
+						<img src="slike/Rss.png" alt="Rss logo" width="31px" height="31px" class="logo" id="rss" />
+						</a>
+						<a href="https://www.facebook.com/">
+						<img src="slike/Facebook.png" alt="Facebook logo" width="31px" height="31px" class="logo" />
+						</a>
+						<a href="https://twitter.com/">
+						<img src="slike/Twitter.jpg" alt="Twitter logo" width="31px" height="31px" class="logo" />
+						</a>
+						<a href="https://www.youtube.com/">
+						<img src="slike/Youtube.png" alt="Youtube logo" width="31px" height="31px" class="logo" />
+						</a>
+					</div>
+				</div>
+				<div id="main-mid">
+					<div class="news">
+						<img src="slike/Cover1.jpg" alt="Cover image"/>
+						<p name="trazi" > Gothic 3 je pušten u prodaju! </p>
+					</div>
+					<div class="news">
+						<img src="slike/Gelden.jpg" alt="City of Gelden" />
+						<p name="trazi"> Otkrij Geldern </p>
+					</div>
+				</div>
+				<div id="main-side">
+					<img src="slike/Cover.jpg" alt="Baner" height="350px" width="250px" />
+					<h4> Naše prethodne igre: </h4>
+					<ul>
+						<li>
+							<a href="http://en.wikipedia.org/wiki/Gothic_%28video_game%29" > Gothic </a>
+							<hr />
+						</li>
+						<li>
+							<a href="http://www.gothic.de/gothic2/content_english/news_headlines.php" > 
+							Gothic II </a>
+							<hr />
+						</li>
+						<li>
+							<a href="http://www.gothic.de/gothic2/content_english/news_headlines.php" >
+							Gothic II: Noć gavrana </a>
+							<hr />
+						</li>
+					</ul>
+				</div>
+				<div id="main-bot">
+					<div class="newz">
+						<a href="novosti.html" >
+						<div class="main-pic">
+							<img src="slike/Mage.jpg" alt="Mage image" border="2px solid #ffb100" />
+						</div>
+						<div class="main-text">
+							<h3> Otkrijte najnovije talente </h3>
+							<p name="trazi" > 
+							Tokom razvoja priče, bezimeni junak se ponovo povezuje sa starim prijateljima iz
+							prvog dela dok se prilagođava strukturalnoj promeni frakcija. Dok je kaznena kolonija
+							bila odsečena od ostatka ostrva, okruženje oko nje su okupirali orci. Saznaj nove
+							puteve magije ili pak kreni putem plaćenika!
+							</p>
+						</div>
+						</a>
+						<hr color="#ffb100" width="580px" />
+					</div>
+					<div class="newz">
+						<a href="vodic.html" >
+						<div class="main-pic">
+							<img src="slike/Hashishi.jpg" alt="Hashishi" border="2px solid #ffb100" />
+						</div>
+						<div class="main-text">
+							<h3> Izaberite svoj klan </h3>
+							<p name="trazi" > 
+							U ovom delu imamo reputaciju za svaku frakciju pa na osnovu toga junak moze ili ne
+							moze da ima pristup određenim delovima koje ta frakcija poseduje. Iako postoje sest
+							frakcija u ovom delu igre, samo tri nude mogucnost da postanete njihov clan.
+							</p>
+						</div>
+						</a>
+						<hr color="#ffb100" width="580px" />
+					</div> 
+				</div>
+			</div>
+			<div id="footer">
+					<div id="footer-left">
+						<a href="index.html"> Početna </a>
+						<a href="prica.html"> Priča </a>
+						<a href="vodic.html"> Vodič </a>
+						<a href="novosti.html"> Novosti </a>
+						<p> &copy; Uroš Jovanović &reg; 2015 </p>
+					</div>
+					<div id="footer-right">
+						<ul>
+							<li> <a href="sitemap.xml"> Sitemap </a> </li>
+							<li> <a href="dokumentacija.pdf" target="_blank" > Dokumentacija </a> </li>
+							<li> <a href="autor.html"> Autor </a> </li>
+						</ul>
+					</div>
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,6 @@
+item{ display: block; background: #00FFFF; width: 400px; margin-top: 20px;
+	color: #fff; padding: 40px; font-size: 1.5em ; color: #FFFFFF ; margin-left: 250px; }
+title{ display: block; padding-bottom: 10px; }
+description{ display: block; background: #CC00CC;  padding: 5px; }
+link{ display: block; background: #0000CC; padding: 5px; }
+

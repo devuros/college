@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/css" href="Stilrss.css"?>
+<rss version="2.0">
+	<channel>
+		<item>
+			<title> Novi sistem talenata </title>
+			<description> Otkrijete novi sistem talenata, uveden da bi potpunila vase
+			iskustvo u igri. Pazljivo gradite svog karaktera jer posle nema povratka! </description>
+			<link> Novosti.html </link>
+		</item>
+		<item>
+			<title> Gothic 3 je pusten u prodaju </title>
+			<description> Od danas 15.3.2015. Gothic 3 pusten je u prodaju u svim
+			malo prodajnim i veleprodajnim mestima </description>
+			<link> Index.html </link>
+		</item>
+		<item>
+			<title> Triler koji ne smeete propustiti </title>
+			<description> Kratak uvod onoga sto propustate ovog maja, i dalje imate vremena. </description>
+			<link> https://www.youtube.com/watch?v=SADhUCqyd4U </link>
+		</item>
+		<item>
+			<title> Najava ekspanzije! </title>
+			<description> Dizajnerski tim Jowood-a u saradznji sa Piranha bytes studios
+			 najavio nadogradnju Gothic 3. </description>
+			<link> Novosti.html </link>
+		</item>
+	</channel>
+</rss>

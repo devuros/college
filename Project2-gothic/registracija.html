@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Gothic 3 </title>
+		<link rel= "stylesheet" type= "text/css" href="stylereg.css" />
+		
+		<meta http-equiv= "Content-Type" content= "text/html; charset= utf-8" />
+		<meta name="description" content="Gotik 3 je prica o bezimenom heroju koji spasava svet od invazije
+		oraka i uz svoje prijatleje Gorna, Diega, Lesterna spasice ljude od tiranije vladajucih i uticaja bogova">
+		<meta name="author" content="Uroš Jovanović" />
+		<meta name="keywords" content="Gothic 3, heroj, inos, adanos,beliar,noc gavrana, gorn,diego,lester,
+		pobunjenici,mirtana,nordmar,varant" />
+		 <meta name="robots" content="index, follow" />
+		<link rel="shortcut icon" href="slike/Iconica.ico" />
+
+		
+		<script src="slike/jquery-1.4.min.js" type="text/javascript" > </script>
+		<script src="slider.js" type="text/javascript" > </script>
+		<script src="dropdown.js" type="text/javascript" > </script>
+		<script src="prijava.js" type="text/javascript" > </script>
+		<script src="pretraga.js" type="text/javascript" > </script>
+		<script src="forma.js" type="text/javascript" > </script>
+		
+	</head>
+	<body>
+		<div id="wrapper">
+			<div id="header">
+				<div id="header-top">
+					<ul>
+						<li> <a href="javascript:prijava()" > Prijava </a> </li>
+						<li> <a href="registracija.html"> Registracija </a> </li>
+						<li> 
+							<a href="" > Istraži </a> 
+								<ul>
+									<li>
+										<a href="sitemap.xml"> Sitemap </a>
+									</li>
+									<li> 
+										<a href="dokumentacija.pdf" target="_blank" > Dokumentacija </a>
+									</li>
+									<li>
+										<a href="autor.html"> Autor </a>
+									</li>
+								</ul>
+						</li>
+					</ul>
+				</div>
+				<div id="header-mid">
+					<h1> Gothic 3 </h1> 
+					<h4> JoWooD productions </h4>
+				</div>
+				<div id="header-bot">
+					<div id="links">
+						<ul>
+							<li> <a href="index.html"> Početna </a> </li>
+							<li> <a href="prica.html"> Priča </a> </li>
+							<li> <a href="vodic.html"> Vodič </a> </li>
+							<li> <a href="novosti.html"> Novosti </a> </li>
+							<li> 
+								<a href=""> Pomoć </a>
+								<ul>
+									<li> 
+										<a href="http://forum.nordicgames.at/forums/254-Gothic-3"> 
+										Forum 
+										</a> 
+									</li>
+									<li>
+										<a href="http://guides.gamepressure.com/gothic3/" > 
+										Vodič kroz igru 
+										</a> 
+									</li>
+									<li>
+										<a href="http://www.cheatcc.com/pc/gothic3cheatscodes.html">
+										Šifre
+										</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+					<div id="search">
+						<form action="#" method="get" name="forma"  >
+							<input type="text" id="tbPretraga" placeholder="Pretrazi.." />
+							<input type="button" id="Sbutton" value="Pretrazi" onclick="pretraga();" />
+						</form>
+					</div>
+				</div>
+			</div>
+			<div id="main">
+				<div id="main-top">
+					<div id="slide">
+						<div id="slide-slike">
+							<img alt="Main" src="slike/Main.jpg" />
+							<img alt="Nordmar" src="slike/Nordmar.jpg" />
+							<img alt="Oasis" src="slike/Oasis.jpg" />
+						</div>
+						
+					</div>
+					<div id="slide-side">
+						<img src="slike/Gothic.jpg" alt="Main Picture" 
+						height="200px" width="330px" border="1px solid #FFF" id="gothic" />
+						<h4> Ostanite u vezi </h4> 
+						<hr />
+						<a href="rss.xml">
+						<img src="slike/Rss.png" alt="Rss logo" width="31px" height="31px" class="logo" id="rss" />
+						</a>
+						<a href="https://www.facebook.com/">
+						<img src="slike/Facebook.png" alt="Facebook logo" width="31px" height="31px" class="logo" />
+						</a>
+						<a href="https://twitter.com/">
+						<img src="slike/Twitter.jpg" alt="Twitter logo" width="31px" height="31px" class="logo" />
+						</a>
+						<a href="https://www.youtube.com/">
+						<img src="slike/Youtube.png" alt="Youtube logo" width="31px" height="31px" class="logo" />
+						</a>
+					</div>
+				</div>
+				<div id="main-reg">
+					<form name="forma" action="mailto:urosjovanovic0704@gmail.com?subject=Registracija" 
+						method="POST" onsubmit="return formular();" >
+					<table id="Tabela" width="600px" height="400px" >
+						<th colspan="2"> 
+						<h2> Registracija </h2> 
+						</th>
+						<tr>
+							<td align="right" > Datum rođenja: </td>
+							<td> 
+								<select id="ddDan" > 
+									<option value="0" > Dan </option>
+									<option value="1" > 1 </option>
+									<option value="2" > 2 </option>
+									<option value="3" > 3 </option>
+									<option value="4" > 4 </option>
+									<option value="5" > 5 </option>
+									<option value="6" > 6 </option>
+									<option value="7" > 7 </option>
+									<option value="8" > 8 </option>
+									<option value="9" > 9 </option>
+									<option value="10" > 10 </option>
+									<option value="11" > 11 </option>
+									<option value="12" > 12 </option>
+									<option value="13" > 13 </option>
+									<option value="14" > 14 </option>
+									<option value="15" > 15 </option>
+									<option value="16" > 16 </option>
+									<option value="17" > 17 </option>
+									<option value="18" > 18 </option>
+									<option value="19" > 19 </option>
+									<option value="20" > 20 </option>
+									<option value="21" > 21 </option>
+									<option value="22" > 22 </option>
+									<option value="23" > 23 </option>
+									<option value="24" > 24 </option>
+									<option value="25" > 25 </option>
+									<option value="26" > 26 </option>
+									<option value="27" > 27 </option>
+									<option value="28" > 28 </option>
+									<option value="29" > 29 </option>
+									<option value="30" > 30 </option>
+									<option value="31" > 31 </option>
+								</select> 
+								<select id="ddMesec" >
+									<option value="0" > Mesec </option>
+									<option value="Januar" > Januar </option>
+									<option value="Februar" > Februar </option>
+									<option value="Mart" > Mart </option>
+									<option value="April" > April </option>
+									<option value="Maj" > Maj </option>
+									<option value="Jun" > Jun </option>
+									<option value="Jul" > Jul </option>
+									<option value="Avgust" > Avgust </option>
+									<option value="Septembar" > Septembar </option>
+									<option value="Oktobar" > Oktobar </option>
+									<option value="Novembar" > Novembar </option>
+									<option value="Decembar" > Decembar </option>
+								</select> 
+								<select id="ddGodina" >
+									<option> Godina </option>
+									<option> 2005 </option>
+									<option> 2004 </option>
+									<option> 2003 </option>
+									<option> 2002 </option>
+									<option> 2001 </option>
+									<option> 2000 </option>
+									<option> 1999 </option>
+									<option> 1998 </option>
+									<option> 1997 </option>
+									<option> 1996 </option>
+									<option> 1995 </option>
+									<option> 1994 </option>
+									<option> 1993 </option>
+									<option> 1992 </option>
+									<option> 1991 </option>
+									<option> 1990 </option>
+									<option> 1989 </option>
+									<option> 1988 </option>
+									<option> 1987 </option>
+									<option> 1986 </option>
+									<option> 1985 </option>
+									<option> 1984 </option>
+									<option> 1983 </option>
+									<option> 1982 </option>
+									<option> 1981 </option>
+									<option> 1980 </option>
+									<option> 1979 </option>
+									<option> 1978 </option>
+									<option> 1977 </option>
+									<option> 1976 </option>
+									<option> 1975 </option>
+									<option> 1974 </option>
+									<option> 1973 </option>
+									<option> 1972 </option>
+									<option> 1971 </option>
+									<option> 1970 </option>
+									<option> 1969 </option>
+									<option> 1968 </option>
+									<option> 1967 </option>
+									<option> 1966 </option>
+									<option> 1965 </option>
+									<option> 1964 </option>
+									<option> 1963 </option>
+									<option> 1962 </option>
+									<option> 1961 </option>
+									<option> 1960 </option>
+									<option> 1959 </option>
+									<option> 1958 </option>
+									<option> 1957 </option>
+									<option> 1956 </option>
+									<option> 1955 </option>
+								</select> 
+							</td> 
+						</tr>
+						<tr> 
+							<td align="right"  > Ime: </td>
+							<td>
+								<input type="text" placeholder="Ime" size="20" id="tbIme" />
+								
+							</td>
+						</tr>
+						<tr>
+							<td align="right" > Prezime: </td>
+							<td>
+								<input type="text" placeholder="Prezime" id="tbPrezime"  />
+							</td>
+						</tr>
+						<tr>
+							<td align="right" > Email: </td> 
+							<td>
+								<input type="text" placeholder="Unesi email" size="25" id="tbEmail" />
+							</td>
+						</tr>
+						<tr>
+							<td align="right" > Lozinka: </td>
+							<td> 
+								<input type="password" placeholder="Unesi lozinku" id="tbLozinka" />
+							</td>
+						</tr>
+						<tr>
+							<td align="right" > Sigurnosno pitanje: </td>
+							<td> 
+								<select id="ddPitanje" >
+									<option value="" > Izaberite pitanje </option>
+									<option value="Ime vaseg prvog kucnog ljubimca?" > Ime vašeg prvog kućnog ljubimca? </option>
+									<option value="Nadimak omiljenog sportiste?" > Nadimak omiljenog sportiste? </option>
+									<option value="Prva video igra koju ste igrali?" > Prva video igra koju ste igrali? </option>
+								</select>
+								
+							</td>
+						</tr>
+						<tr>
+							<td align="right" > Odgovor: </td>
+							<td> 
+								<input type="password" placeholder="Odgovori na pitanje" size="15" id="tbOdgovor" />
+							</td>
+						</tr>
+						<tr align="center">
+							<td colspan="2"> 
+								<input type="submit" value="Registracija" class="button" /> 
+								<input type="reset" value="Ponisti" class="button" /> 
+							</td>
+						</tr>
+					</table>
+					</form>
+				</div>
+				<div id="main-side">
+					<img src="slike/Cover.jpg" alt="Baner" height="350px" width="250px" />
+					<h4> Naše prethodne igre: </h4>
+					<ul>
+						<li>
+							<a href="http://en.wikipedia.org/wiki/Gothic_%28video_game%29" > Gothic </a>
+							<hr />
+						</li>
+						<li>
+							<a href="http://www.gothic.de/gothic2/content_english/news_headlines.php" > 
+							Gothic II </a>
+							<hr />
+						</li>
+						<li>
+							<a href="http://www.gothic.de/gothic2/content_english/news_headlines.php" >
+							Gothic II: Noć gavrana </a>
+							<hr />
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div id="footer">
+				<div id="footer-left">
+					<a href="index.html"> Početna </a>
+					<a href="prica.html"> Priča </a>
+					<a href="vodic.html"> Vodič </a>
+					<a href="novosti.html"> Novosti </a>
+					<p> &copy; Uroš Jovanović &reg; 2015 </p>
+				</div>
+				<div id="footer-right">
+					<ul>
+						<li> <a href="sitemap.xml"> Sitemap </a> </li>
+						<li> <a href="dokumentacija.pdf"> Dokumentacija </a> </li>
+						<li> <a href="autor.html"> Autor </a> </li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
